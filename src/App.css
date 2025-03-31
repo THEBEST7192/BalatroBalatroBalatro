@@ -25,15 +25,6 @@ body {
   border-radius: 5px;
 }
 
-.close-btn {
-  font-family: balatro, Arial, sans-serif;
-  position: absolute;
-  right: 15px;
-  top: 15px;
-  padding: 5px 10px;
-  cursor: pointer;
-}
-
 .details-image {
   width: 100%;
   height: auto;
@@ -70,19 +61,26 @@ body {
 
 .card-details {
   position: relative;
-  margin-top: 30px;
   padding: 20px;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: left;
-  background-color: #f9f9f9;
   border: 1px solid #ddd;
   border-radius: 8px;
+  max-width: 500px;
+  margin: 20px auto;
+  background-color: #f9f9f9;
 }
 
-.card-info p {
-  margin: 5px 0;
+.card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.card-info-item {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
 }
 
 
@@ -138,6 +136,7 @@ body {
   padding: 1px;
 }
 
+/* Button for choosing a tab also for RNG */
 button {
 color: #000000;
 border: 1px solid #ddd;
@@ -148,13 +147,55 @@ margin-bottom: 10px;
 margin-left: 2px;
 margin-right: 2px;
 }
+
+button:hover {
+  color: #000000;
+  border: 1px solid #bbbaba;
+  font-family: Balatro, Arial, sans-serif;
+  border-radius: 0.25rem;
+  padding: 5px;
+  margin-bottom: 10px;
+  margin-left: 2px;
+  margin-right: 2px;
+  transform: scale(1.01);
+  }
+
 .blind-details {
+  position: relative;
   padding: 20px;
   border: 1px solid #ddd;
   border-radius: 8px;
   max-width: 500px;
   margin: 20px auto;
   background-color: #f9f9f9;
+}
+
+.blind-container {
+  display: grid;
+  justify-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.blind-card {
+  cursor: pointer;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  transition: transform 0.3s ease;
+  background-color: #f9f9f9;
+}
+
+.blind-card:hover {
+  transform: scale(1.05);
+}
+
+.blind-image {
+  width: 100%;
+  max-width: 120px;
+  height: auto;
+  border-radius: 5px;
 }
 
 .blind-info {
@@ -175,12 +216,19 @@ margin-right: 2px;
   font-weight: bold;
 }
 
+.blind-image:hover {
+  transform: scale(1.05);
+}
+
 .details-image {
-  max-width: 100%;
-  border-radius: 8px;
+  position: relative;
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
 }
 
 .close-btn {
+  position: absolute;
   background-color: #ff4d4d;
   color: white;
   padding: 8px 15px;
@@ -188,8 +236,26 @@ margin-right: 2px;
   border-radius: 5px;
   cursor: pointer;
   margin-top: 10px;
+  font-family: balatro, Arial, sans-serif;
+  right: 15px;
+  top: 15px;
+  padding: 5px 10px;
+  cursor: pointer;
 }
 
 .close-btn:hover {
-  background-color: #ff1a1a;
+  position: absolute;
+  background-color: #ff4d4d;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-family: balatro, Arial, sans-serif;
+  right: 15px;
+  top: 15px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transform: scale(1.05);
 }

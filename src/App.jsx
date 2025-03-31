@@ -1,3 +1,4 @@
+// App.jsx
 import React, { useState } from 'react';
 import './App.css';
 
@@ -103,49 +104,39 @@ function App() {
     const voucherType = /\b(voucher|Voucher|Base Voucher|Upgraded Voucher)\b/gi;
     const spectralType = /\b(spectral|Spectral)\b/gi;
     
-
     const highlightedText = text
-        // Keywords (plus mult, x mult, chips, $)
+      // Keywords (plus mult, x mult, chips, $)
       .replace(multPattern, (match) => `<span class="highlight-plusmult">${match}</span>`)
       .replace(xmultPattern, (match) => `<span class="highlight-xmult">${match}</span>`)
       .replace(chipPattern, (match) => `<span class="highlight-chips">${match}</span>`)      
       .replace(dollarPattern, (match) => `<span class="highlight-money">${match}</span>`)
-
       // Card suits
       .replace(heartsPattern, (match) => `<span class="highlight-hearts">${match}</span>`)
       .replace(diamondsPattern, (match) => `<span class="highlight-diamonds">${match}</span>`)
       .replace(clubsPattern, (match) => `<span class="highlight-clubs">${match}</span>`)
       .replace(spadesPattern, (match) => `<span class="highlight-spades">${match}</span>`)
-
       // Rarity
       .replace(commonRarity, (match) => `<span class="rarity-commonTxt">${match}</span>`)
       .replace(uncommonRarity, (match) => `<span class="rarity-uncommonTxt">${match}</span>`)
       .replace(rareRarity, (match) => `<span class="rarity-rareTxt">${match}</span>`)
       .replace(legendaryRarity, (match) => `<span class="rarity-legendaryTxt">${match}</span>`)
-
       // Card type
       .replace(tarotType, (match) => `<span class="tarotTxt">${match}</span>`)
       .replace(planetType, (match) => `<span class="planetTxt">${match}</span>`)
       .replace(voucherType, (match) => `<span class="voucherTxt">${match}</span>`)
       .replace(spectralType, (match) => `<span class="spectralTxt">${match}</span>`);
-
-
-
+    
     return highlightedText;
   };
 
   // Helper function to determine the card container class based on its type or rarity.
   // For jokers, use the rarity (e.g., rarity-common, rarity-rare). For the rest, use type.
   const getCardClass = (card) => {
-  //  console.log("Card Type:", card.type); // Debugging output
-  
     if (card.type === "Joker" && card.rarity) {
       return `card rarity-${card.rarity.toLowerCase()}`;
     }
     return `card ${card.type.toLowerCase()}`;
   };
-  
-
 
   return (
     <div className="App">
@@ -204,28 +195,31 @@ function App() {
 
           {selectedCard && (
             <div className="card-details">
+
               <button className="close-btn" onClick={() => setSelectedCard(null)}>
                 Close
               </button>
+
               <h2>{selectedCard.name}</h2>
               <img
                 src={selectedCard.image_url}
                 alt={selectedCard.name}
                 className="details-image"
               />
-              <p>
-                <strong>{keyLabels.type}:</strong> {selectedCard.type}
-              </p>
               <div className="card-info">
+                {/* Render the type first */}
+                <div className="card-info-item">
+                  <strong>{keyLabels.type}:</strong> {selectedCard.type}
+                </div>
                 {Object.entries(selectedCard).map(([key, value]) => {
                   if (['image_url', 'name', 'type'].includes(key)) return null;
                   if (!value || value.trim() === "") return null;
                   const label = keyLabels[key] || key;
                   return (
-                    <p key={key}>
+                    <div key={key} className="card-info-item">
                       <strong>{label}:</strong>{' '}
-                      <span dangerouslySetInnerHTML={{ __html: highlightText(value) }} />
-                    </p>
+                      <span dangerouslySetInnerHTML={{ __html: highlightText(value) }}/>
+                    </div>
                   );
                 })}
               </div>
