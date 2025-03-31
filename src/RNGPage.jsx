@@ -17,6 +17,23 @@ function RNGPage() {
       } else {
         setResult('Survived');
       }
+      
+    } else if (rollType === 'lucky') {
+      if (r < (1 * factor) / 15) {
+        setResult('+20$');
+      } else if (r < (1 * factor) / 5) {
+        setResult('+20 Mult');          
+        } else {
+          setResult ('You got nothing :(')
+        }
+
+      }  else if (rollType === '8ball') {
+      if (r < (1 * factor) / 4) {
+        setResult('Yippee! You got a tarot card!');
+      } else {
+        setResult('You got nothing use a joker that is not shit');
+      }
+
     } else if (rollType === 'wheel') {
       if (r < (1 * factor) / 4) {
         const effectRoll = Math.random();
@@ -30,8 +47,9 @@ function RNGPage() {
           setResult('Negative');
         }
       } else {
-        setResult('Nope');
+        setResult('Nope!');
       }
+      
     } else if (rollType === 'micheal') {
       if (r < (1 * factor) / 6) {
         setResult('Extinct!');
@@ -73,8 +91,10 @@ function RNGPage() {
           value={rollType}
           onChange={(e) => setRollType(e.target.value)}
         >
-          <option value="glass">Glass and 8 Ball</option>
+          <option value="glass">Glass Cards</option>
+          <option value="lucky">Lucky Cards</option>
           <option value="wheel">Wheel of fortune</option>
+          <option value="8ball">8 Ball</option>
           <option value="misprint">Misprint </option>
           <option value="micheal">Gros Micheal</option>
           <option value="cavendish">Cavendish</option>
