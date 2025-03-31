@@ -8,7 +8,12 @@ import planetCards from './planet_cards.json';
 import jokers from './balatro_jokers.json';
 import spectral from './spectral.json';
 
+// Import the BossBlinds component
+import BossBlinds from './BossBlinds';
+
 function App() {
+  const [selectedTab, setSelectedTab] = useState("cards");
+
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCard, setSelectedCard] = useState(null);
   const [cardsPerRow, setCardsPerRow] = useState(8); // slider state
@@ -132,7 +137,7 @@ function App() {
   // Helper function to determine the card container class based on its type or rarity.
   // For jokers, use the rarity (e.g., rarity-common, rarity-rare). For the rest, use type.
   const getCardClass = (card) => {
-    console.log("Card Type:", card.type); // Debugging output
+  //  console.log("Card Type:", card.type); // Debugging output
   
     if (card.type === "Joker" && card.rarity) {
       return `card rarity-${card.rarity.toLowerCase()}`;
@@ -141,80 +146,95 @@ function App() {
   };
   
 
+
   return (
     <div className="App">
-      <h1>Card Gallery</h1>
-      <input
-        type="text"
-        placeholder="Search cards..."
-        value={searchTerm}
-        onChange={(e) => setSearchTerm(e.target.value)}
-        className="search-bar"
-      />
-      <div className="slider-container">
-        <label htmlFor="cardsPerRow">Cards per row: {cardsPerRow}</label>
-        <input
-          type="range"
-          id="cardsPerRow"
-          min="5"
-          max="30"
-          value={cardsPerRow}
-          onChange={(e) => setCardsPerRow(parseInt(e.target.value))}
-        />
-      </div>
-      <div
-        className={`card-container ${cardsPerRow > 10 ? "compact" : ""}`}
-        style={{
-          display: 'grid',
-          gridTemplateColumns: `repeat(${cardsPerRow}, 1fr)`,
-          gap: '15px'
-        }}
-      >
-        {filteredCards.map((card, index) => (
-          <div
-            key={index}
-            className={getCardClass(card)}
-            onClick={() => setSelectedCard(card)}
-          >
-            <img
-              src={card.image_url}
-              alt={displayName(card)}
-              className="card-image"
-            />
-            {cardsPerRow <= 10 && <p>{displayName(card)}</p>}
-          </div>
-        ))}
-      </div>
-
-      {selectedCard && (
-        <div className="card-details">
-          <button className="close-btn" onClick={() => setSelectedCard(null)}>
-            Close
-          </button>
-          <h2>{selectedCard.name}</h2>
-          <img
-            src={selectedCard.image_url}
-            alt={selectedCard.name}
-            className="details-image"
+      <header>
+        <h1>Balatro Site</h1>
+        <nav>
+          <button onClick={() => setSelectedTab("cards")}>Card Gallery</button>
+          <button onClick={() => setSelectedTab("bossblinds")}>Boss Blinds</button>
+        </nav>
+      </header>
+      
+      {selectedTab === "cards" && (
+        <div className="card-gallery">
+          <h1>Card Gallery</h1>
+          <input
+            type="text"
+            placeholder="Search cards..."
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+            className="search-bar"
           />
-          <p>
-            <strong>{keyLabels.type}:</strong> {selectedCard.type}
-          </p>
-          <div className="card-info">
-            {Object.entries(selectedCard).map(([key, value]) => {
-              if (['image_url', 'name', 'type'].includes(key)) return null;
-              if (!value || value.trim() === "") return null;
-              const label = keyLabels[key] || key;
-              return (
-                <p key={key}>
-                  <strong>{label}:</strong>{' '}
-                  <span dangerouslySetInnerHTML={{ __html: highlightText(value) }} />
-                </p>
-              );
-            })}
+          <div className="slider-container">
+            <label htmlFor="cardsPerRow">Cards per row: {cardsPerRow}</label>
+            <input
+              type="range"
+              id="cardsPerRow"
+              min="5"
+              max="30"
+              value={cardsPerRow}
+              onChange={(e) => setCardsPerRow(parseInt(e.target.value))}
+            />
           </div>
+          <div
+            className={`card-container ${cardsPerRow > 10 ? "compact" : ""}`}
+            style={{
+              display: 'grid',
+              gridTemplateColumns: `repeat(${cardsPerRow}, 1fr)`,
+              gap: '15px'
+            }}
+          >
+            {filteredCards.map((card, index) => (
+              <div
+                key={index}
+                className={getCardClass(card)}
+                onClick={() => setSelectedCard(card)}
+              >
+                <img
+                  src={card.image_url}
+                  alt={displayName(card)}
+                  className="card-image"
+                />
+                {cardsPerRow <= 10 && <p>{displayName(card)}</p>}
+              </div>
+            ))}
+          </div>
+
+          {selectedCard && (
+            <div className="card-details">
+              <button className="close-btn" onClick={() => setSelectedCard(null)}>
+                Close
+              </button>
+              <h2>{selectedCard.name}</h2>
+              <img
+                src={selectedCard.image_url}
+                alt={selectedCard.name}
+                className="details-image"
+              />
+              <p>
+                <strong>{keyLabels.type}:</strong> {selectedCard.type}
+              </p>
+              <div className="card-info">
+                {Object.entries(selectedCard).map(([key, value]) => {
+                  if (['image_url', 'name', 'type'].includes(key)) return null;
+                  if (!value || value.trim() === "") return null;
+                  const label = keyLabels[key] || key;
+                  return (
+                    <p key={key}>
+                      <strong>{label}:</strong>{' '}
+                      <span dangerouslySetInnerHTML={{ __html: highlightText(value) }} />
+                    </p>
+                  );
+                })}
+              </div>
+            </div>
+          )}
         </div>
       )}
+
+      {selectedTab === "bossblinds" && <BossBlinds />}
     </div>
   );
 }

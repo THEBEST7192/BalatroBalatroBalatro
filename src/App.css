@@ -137,3 +137,59 @@ body {
 .card-container.compact .card {
   padding: 1px;
 }
+
+button {
+color: #000000;
+border: 1px solid #ddd;
+font-family: Balatro, Arial, sans-serif;
+border-radius: 0.25rem;
+padding: 5px;
+margin-bottom: 10px;
+margin-left: 2px;
+margin-right: 2px;
+}
+.blind-details {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  max-width: 500px;
+  margin: 20px auto;
+  background-color: #f9f9f9;
+}
+
+.blind-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.blind-info-item {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.blind-info-item strong {
+  font-weight: bold;
+}
+
+.details-image {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.close-btn {
+  background-color: #ff4d4d;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.close-btn:hover {
+  background-color: #ff1a1a;
+}
