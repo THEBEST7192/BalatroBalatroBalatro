@@ -50,7 +50,9 @@ function RNGPage() {
       } else {
         setResult('No bloodstone for you');
       }
-    }
+    } else if (rollType === 'misprint') {
+        setResult(Math.floor(Math.random() * 24));
+    }    
   };
 
   return (
@@ -71,8 +73,9 @@ function RNGPage() {
           value={rollType}
           onChange={(e) => setRollType(e.target.value)}
         >
-          <option value="glass">Glass</option>
+          <option value="glass">Glass and 8 Ball</option>
           <option value="wheel">Wheel of fortune</option>
+          <option value="misprint">Misprint </option>
           <option value="micheal">Gros Micheal</option>
           <option value="cavendish">Cavendish</option>
           <option value="bloodstone">Bloodstone</option>
