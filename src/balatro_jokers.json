@@ -1,0 +1,1352 @@
+[
+  {
+    "joker": "Joker",
+    "effect": "+4 Mult",
+    "cost": "$2",
+    "rarity": "Common",
+    "type": "+m",
+    "activation": "Indep.",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/e/ef/Joker.png"
+  },
+  {
+    "joker": "Greedy Joker",
+    "effect": "Played cards with Diamond suit give +3 Mult when scored",
+    "cost": "$5",
+    "rarity": "Common",
+    "type": "+m",
+    "activation": "On Scored",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/4/43/Greedy_Joker.png"
+  },
+  {
+    "joker": "Lusty Joker",
+    "effect": "Played cards with Heart suit give +3 Mult when scored",
+    "cost": "$5",
+    "rarity": "Common",
+    "type": "+m",
+    "activation": "On Scored",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/f/fd/Lusty_Joker.png"
+  },
+  {
+    "joker": "Wrathful Joker",
+    "effect": "Played cards with Spade suit give +3 Mult when scored",
+    "cost": "$5",
+    "rarity": "Common",
+    "type": "+m",
+    "activation": "On Scored",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/7/7b/Wrathful_Joker.png"
+  },
+  {
+    "joker": "Gluttonous Joker",
+    "effect": "Played cards with Club suit give +3 Mult when scored",
+    "cost": "$5",
+    "rarity": "Common",
+    "type": "+m",
+    "activation": "On Scored",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/a/ac/Gluttonous_Joker.png"
+  },
+  {
+    "joker": "Jolly Joker",
+    "effect": "+8 Mult if played hand contains a Pair",
+    "cost": "$3",
+    "rarity": "Common",
+    "type": "+m",
+    "activation": "Indep.",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/4/40/Jolly_Joker.png"
+  },
+  {
+    "joker": "Zany Joker",
+    "effect": "+12 Mult if played hand contains a Three of a Kind",
+    "cost": "$4",
+    "rarity": "Common",
+    "type": "+m",
+    "activation": "Indep.",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/4/45/Zany_Joker.png"
+  },
+  {
+    "joker": "Mad Joker",
+    "effect": "+10 Mult if played hand contains a Two Pair",
+    "cost": "$4",
+    "rarity": "Common",
+    "type": "+m",
+    "activation": "Indep.",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/6/6d/Mad_Joker.png"
+  },
+  {
+    "joker": "Crazy Joker",
+    "effect": "+12 Mult if played hand contains a Straight",
+    "cost": "$4",
+    "rarity": "Common",
+    "type": "+m",
+    "activation": "Indep.",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/4/4d/Crazy_Joker.png"
+  },
+  {
+    "joker": "Droll Joker",
+    "effect": "+10 Mult if played hand contains a Flush",
+    "cost": "$4",
+    "rarity": "Common",
+    "type": "+m",
+    "activation": "Indep.",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/9/9c/Droll_Joker.png"
+  },
+  {
+    "joker": "Sly Joker",
+    "effect": "+50 Chips if played hand contains a Pair",
+    "cost": "$3",
+    "rarity": "Common",
+    "type": "+c",
+    "activation": "Indep.",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/4/4e/Sly_Joker.png"
+  },
+  {
+    "joker": "Wily Joker",
+    "effect": "+100 Chips if played hand contains a Three of a Kind",
+    "cost": "$4",
+    "rarity": "Common",
+    "type": "+c",
+    "activation": "Indep.",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/4/4d/Wily_Joker.png"
+  },
+  {
+    "joker": "Clever Joker",
+    "effect": "+80 Chips if played hand contains a Two Pair",
+    "cost": "$4",
+    "rarity": "Common",
+    "type": "+c",
+    "activation": "Indep.",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/6/6a/Clever_Joker.png"
+  },
+  {
+    "joker": "Devious Joker",
+    "effect": "+100 Chips if played hand contains a Straight",
+    "cost": "$4",
+    "rarity": "Common",
+    "type": "+c",
+    "activation": "Indep.",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/4/4a/Devious_Joker.png"
+  },
+  {
+    "joker": "Crafty Joker",
+    "effect": "+80 Chips if played hand contains a Flush",
+    "cost": "$4",
+    "rarity": "Common",
+    "type": "+c",
+    "activation": "Indep.",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/7/7f/Crafty_Joker.png"
+  },
+  {
+    "joker": "Half Joker",
+    "effect": "+20 Mult if played hand contains 3 or fewer cards",
+    "cost": "$5",
+    "rarity": "Common",
+    "type": "+m",
+    "activation": "Indep.",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/a/a0/Half_Joker.png"
+  },
+  {
+    "joker": "Joker Stencil",
+    "effect": "X1 Mult for each empty Joker slot. Joker Stencil included (Currently X1 )",
+    "cost": "$8",
+    "rarity": "Uncommon",
+    "type": "Xm",
+    "activation": "Indep.",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/2/2e/Joker_Stencil.png"
+  },
+  {
+    "joker": "Four Fingers",
+    "effect": "All Flushes and Straights can be made with 4 cards",
+    "cost": "$7",
+    "rarity": "Uncommon",
+    "type": "!!",
+    "activation": "N/A",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/f/fd/Four_Fingers.png"
+  },
+  {
+    "joker": "Mime",
+    "effect": "Retrigger all card held in hand abilities",
+    "cost": "$5",
+    "rarity": "Uncommon",
+    "type": "...",
+    "activation": "On Held",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/6/65/Mime.png"
+  },
+  {
+    "joker": "Credit Card",
+    "effect": "Go up to -$20 in debt",
+    "cost": "$1",
+    "rarity": "Common",
+    "type": "+$",
+    "activation": "N/A",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/a/aa/Credit_Card.png"
+  },
+  {
+    "joker": "Ceremonial Dagger",
+    "effect": "When Blind is selected, destroy Joker to the right and permanently add double its sell value to this Mult (Currently +0 Mult )",
+    "cost": "$6",
+    "rarity": "Uncommon",
+    "type": "+m",
+    "activation": "Indep.",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/7/76/Ceremonial_Dagger.png"
+  },
+  {
+    "joker": "Banner",
+    "effect": "+30 Chips for each remaining discard",
+    "cost": "$5",
+    "rarity": "Common",
+    "type": "+c",
+    "activation": "Indep.",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/8/87/Banner.png"
+  },
+  {
+    "joker": "Mystic Summit",
+    "effect": "+15 Mult when 0 discards remaining",
+    "cost": "$5",
+    "rarity": "Common",
+    "type": "+m",
+    "activation": "Indep.",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/a/a4/Mystic_Summit.png"
+  },
+  {
+    "joker": "Marble Joker",
+    "effect": "Adds one Stone card to the deck when Blind is selected",
+    "cost": "$6",
+    "rarity": "Uncommon",
+    "type": "!!",
+    "activation": "N/A",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/1/16/Marble_Joker.png"
+  },
+  {
+    "joker": "Loyalty Card",
+    "effect": "X4 Mult every 6 hands played 5 remaining",
+    "cost": "$5",
+    "rarity": "Uncommon",
+    "type": "Xm",
+    "activation": "Indep.",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/e/eb/Loyalty_Card.png"
+  },
+  {
+    "joker": "8 Ball",
+    "effect": "1 in 4 chance for each played 8 to create a Tarot card when scored (Must have room)",
+    "cost": "$5",
+    "rarity": "Common",
+    "type": "!!",
+    "activation": "On Scored",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/e/ef/8_Ball.png"
+  },
+  {
+    "joker": "Misprint",
+    "effect": "+0-23 Mult",
+    "cost": "$4",
+    "rarity": "Common",
+    "type": "+m",
+    "activation": "Indep.",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/e/e1/Misprint.png"
+  },
+  {
+    "joker": "Dusk",
+    "effect": "Retrigger all played cards in final hand of the round",
+    "cost": "$5",
+    "rarity": "Uncommon",
+    "type": "...",
+    "activation": "On Scored",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/5/5d/Dusk.png"
+  },
+  {
+    "joker": "Raised Fist",
+    "effect": "Adds double the rank of lowest ranked card held in hand to Mult",
+    "cost": "$5",
+    "rarity": "Common",
+    "type": "+m",
+    "activation": "On Held",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/3/37/Raised_Fist.png"
+  },
+  {
+    "joker": "Chaos the Clown",
+    "effect": "1 free Reroll per shop",
+    "cost": "$4",
+    "rarity": "Common",
+    "type": "!!",
+    "activation": "N/A",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/0/02/Chaos_the_Clown.png"
+  },
+  {
+    "joker": "Fibonacci",
+    "effect": "Each played Ace , 2 , 3 , 5 , or 8 gives +8 Mult when scored",
+    "cost": "$8",
+    "rarity": "Uncommon",
+    "type": "+m",
+    "activation": "On Scored",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/f/f1/Fibonacci.png"
+  },
+  {
+    "joker": "Steel Joker",
+    "effect": "Gives X0.2 Mult for each Steel Card in your full deck (Currently X1 Mult )",
+    "cost": "$7",
+    "rarity": "Uncommon",
+    "type": "Xm",
+    "activation": "Indep.",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/f/fd/Steel_Joker.png"
+  },
+  {
+    "joker": "Scary Face",
+    "effect": "Played face cards give +30 Chips when scored",
+    "cost": "$4",
+    "rarity": "Common",
+    "type": "+c",
+    "activation": "On Scored",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/c/c8/Scary_Face.png"
+  },
+  {
+    "joker": "Abstract Joker",
+    "effect": "+3 Mult for each Joker card (Currently +0 Mult )",
+    "cost": "$4",
+    "rarity": "Common",
+    "type": "+m",
+    "activation": "Indep.",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/c/ca/Abstract_Joker.png"
+  },
+  {
+    "joker": "Delayed Gratification",
+    "effect": "Earn $2 per discard if no discards are used by end of the round",
+    "cost": "$4",
+    "rarity": "Common",
+    "type": "+$",
+    "activation": "N/A",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/c/c3/Delayed_Gratification.png"
+  },
+  {
+    "joker": "Hack",
+    "effect": "Retrigger each played 2 , 3 , 4 , or 5",
+    "cost": "$6",
+    "rarity": "Uncommon",
+    "type": "...",
+    "activation": "On Scored",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/f/fd/Hack.png"
+  },
+  {
+    "joker": "Pareidolia",
+    "effect": "All cards are considered face cards",
+    "cost": "$5",
+    "rarity": "Uncommon",
+    "type": "!!",
+    "activation": "N/A",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/8/81/Pareidolia.png"
+  },
+  {
+    "joker": "Gros Michel",
+    "effect": "+15 Mult 1 in 6 chance this is destroyed at the end of round.",
+    "cost": "$5",
+    "rarity": "Common",
+    "type": "+m",
+    "activation": "Indep.",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/6/6f/Gros_Michel.png"
+  },
+  {
+    "joker": "Even Steven",
+    "effect": "Played cards with even rank give +4 Mult when scored (10, 8, 6, 4, 2)",
+    "cost": "$4",
+    "rarity": "Common",
+    "type": "+m",
+    "activation": "On Scored",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/2/20/Even_Steven.png"
+  },
+  {
+    "joker": "Odd Todd",
+    "effect": "Played cards with odd rank give +31 Chips when scored (A, 9, 7, 5, 3)",
+    "cost": "$4",
+    "rarity": "Common",
+    "type": "+c",
+    "activation": "On Scored",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/1/17/Odd_Todd.png"
+  },
+  {
+    "joker": "Scholar",
+    "effect": "Played Aces give +20 Chips and +4 Mult when scored",
+    "cost": "$4",
+    "rarity": "Common",
+    "type": "++",
+    "activation": "On Scored",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/c/c5/Scholar.png"
+  },
+  {
+    "joker": "Business Card",
+    "effect": "Played face cards have a 1 in 2 chance to give $2 when scored",
+    "cost": "$4",
+    "rarity": "Common",
+    "type": "+$",
+    "activation": "On Scored",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/1/16/Business_Card.png"
+  },
+  {
+    "joker": "Supernova",
+    "effect": "Adds the number of times poker hand has been played this run to Mult",
+    "cost": "$5",
+    "rarity": "Common",
+    "type": "+m",
+    "activation": "Indep.",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/3/30/Supernova.png"
+  },
+  {
+    "joker": "Ride the Bus",
+    "effect": "This Joker gains +1 Mult per consecutive hand played without a scoring face card (Currently +0 Mult )",
+    "cost": "$6",
+    "rarity": "Common",
+    "type": "+m",
+    "activation": "Mixed",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/3/34/Ride_the_Bus.png"
+  },
+  {
+    "joker": "Space Joker",
+    "effect": "1 in 4 chance to upgrade level of played poker hand",
+    "cost": "$5",
+    "rarity": "Uncommon",
+    "type": "!!",
+    "activation": "On Played",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/7/70/Space_Joker.png"
+  },
+  {
+    "joker": "Egg",
+    "effect": "Gains $3 of sell value at end of round",
+    "cost": "$4",
+    "rarity": "Common",
+    "type": "+$",
+    "activation": "N/A",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/2/26/Egg.png"
+  },
+  {
+    "joker": "Burglar",
+    "effect": "When Blind is selected, gain +3 Hands and lose all discards",
+    "cost": "$6",
+    "rarity": "Uncommon",
+    "type": "!!",
+    "activation": "N/A",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/2/29/Burglar.png"
+  },
+  {
+    "joker": "Blackboard",
+    "effect": "X3 Mult if all cards held in hand are Spades or Clubs",
+    "cost": "$6",
+    "rarity": "Uncommon",
+    "type": "Xm",
+    "activation": "Indep.",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/c/c6/Blackboard.png"
+  },
+  {
+    "joker": "Runner",
+    "effect": "Gains +15 Chips if played hand contains a Straight (Currently +0 Chips )",
+    "cost": "$5",
+    "rarity": "Common",
+    "type": "+c",
+    "activation": "Mixed",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/1/14/Runner.png"
+  },
+  {
+    "joker": "Ice Cream",
+    "effect": "+100 Chips -5 Chips for every hand played",
+    "cost": "$5",
+    "rarity": "Common",
+    "type": "+c",
+    "activation": "Indep.",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/5/5d/Ice_Cream.png"
+  },
+  {
+    "joker": "DNA",
+    "effect": "If first hand of round has only 1 card, add a permanent copy to deck and draw it to hand",
+    "cost": "$8",
+    "rarity": "Rare",
+    "type": "!!",
+    "activation": "On Played",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/4/47/DNA.png"
+  },
+  {
+    "joker": "Splash",
+    "effect": "Every played card counts in scoring",
+    "cost": "$3",
+    "rarity": "Common",
+    "type": "!!",
+    "activation": "N/A",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/0/01/Splash.png"
+  },
+  {
+    "joker": "Blue Joker",
+    "effect": "+2 Chips for each remaining card in deck (Currently +104 Chips )",
+    "cost": "$5",
+    "rarity": "Common",
+    "type": "+c",
+    "activation": "Indep.",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/e/ed/Blue_Joker.png"
+  },
+  {
+    "joker": "Sixth Sense",
+    "effect": "If first hand of round is a single 6 , destroy it and create a Spectral card (Must have room)",
+    "cost": "$6",
+    "rarity": "Uncommon",
+    "type": "!!",
+    "activation": "N/A",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/d/d5/Sixth_Sense.png"
+  },
+  {
+    "joker": "Constellation",
+    "effect": "This Joker gains X0.1 Mult every time a Planet card is used (Currently X1 Mult )",
+    "cost": "$6",
+    "rarity": "Uncommon",
+    "type": "Xm",
+    "activation": "Indep.",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/6/69/Constellation.png"
+  },
+  {
+    "joker": "Hiker",
+    "effect": "Every played card permanently gains +5 Chips when scored",
+    "cost": "$5",
+    "rarity": "Uncommon",
+    "type": "+c",
+    "activation": "On Scored",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/a/a9/Hiker.png"
+  },
+  {
+    "joker": "Faceless Joker",
+    "effect": "Earn $5 if 3 or more face cards are discarded at the same time",
+    "cost": "$4",
+    "rarity": "Common",
+    "type": "+$",
+    "activation": "On Discard",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/8/8f/Faceless_Joker.png"
+  },
+  {
+    "joker": "Green Joker",
+    "effect": "+1 Mult per hand played -1 Mult per discard (Currently +0 Mult )",
+    "cost": "$4",
+    "rarity": "Common",
+    "type": "+m",
+    "activation": "Mixed",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/6/6c/Green_Joker.png"
+  },
+  {
+    "joker": "Superposition",
+    "effect": "Create a Tarot card if poker hand contains an Ace and a Straight (Must have room)",
+    "cost": "$4",
+    "rarity": "Common",
+    "type": "!!",
+    "activation": "Indep.",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/6/68/Superposition.png"
+  },
+  {
+    "joker": "To Do List",
+    "effect": "Earn $4 if poker hand is a [Poker Hand] , poker hand changes at end of round",
+    "cost": "$4",
+    "rarity": "Common",
+    "type": "+$",
+    "activation": "On Played",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/2/2c/To_Do_List.png"
+  },
+  {
+    "joker": "Cavendish",
+    "effect": "X3 Mult 1 in 1000 chance this card is destroyed at the end of round",
+    "cost": "$4",
+    "rarity": "Common",
+    "type": "Xm",
+    "activation": "Indep.",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/1/13/Cavendish.png"
+  },
+  {
+    "joker": "Card Sharp",
+    "effect": "X3 Mult if played poker hand has already been played this round",
+    "cost": "$6",
+    "rarity": "Uncommon",
+    "type": "Xm",
+    "activation": "Indep.",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/1/12/Card_Sharp.png"
+  },
+  {
+    "joker": "Red Card",
+    "effect": "This Joker gains +3 Mult when any Booster Pack is skipped (Currently +0 Mult )",
+    "cost": "$5",
+    "rarity": "Common",
+    "type": "+m",
+    "activation": "Indep.",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/9/93/Red_Card.png"
+  },
+  {
+    "joker": "Madness",
+    "effect": "When Small Blind or Big Blind is selected, gain X0.5 Mult and destroy a random Joker (Currently X1 Mult )",
+    "cost": "$7",
+    "rarity": "Uncommon",
+    "type": "Xm",
+    "activation": "Indep.",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/e/ee/Madness.png"
+  },
+  {
+    "joker": "Square Joker",
+    "effect": "This Joker gains +4 Chips if played hand has exactly 4 cards (Currently 0 Chips )",
+    "cost": "$4",
+    "rarity": "Common",
+    "type": "+c",
+    "activation": "Mixed",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/5/53/Square_Joker.png"
+  },
+  {
+    "joker": "Séance",
+    "effect": "If poker hand is a Straight Flush , create a random Spectral card (Must have room)",
+    "cost": "$6",
+    "rarity": "Uncommon",
+    "type": "!!",
+    "activation": "Indep.",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/6/6f/S%C3%A9ance.png"
+  },
+  {
+    "joker": "Riff-Raff",
+    "effect": "When Blind is selected, create 2 Common Jokers (Must have room)",
+    "cost": "$6",
+    "rarity": "Common",
+    "type": "!!",
+    "activation": "N/A",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/d/d2/Riff-Raff.png"
+  },
+  {
+    "joker": "Vampire",
+    "effect": "This Joker gains X0.1 Mult per scoring Enhanced card played, removes card Enhancement (Currently X1 Mult )",
+    "cost": "$7",
+    "rarity": "Uncommon",
+    "type": "Xm",
+    "activation": "Mixed",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/4/4e/Vampire.png"
+  },
+  {
+    "joker": "Shortcut",
+    "effect": "Allows Straights to be made with gaps of 1 rank (ex: 10 8 6 5 3 )",
+    "cost": "$7",
+    "rarity": "Uncommon",
+    "type": "!!",
+    "activation": "N/A",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/8/89/Shortcut.png"
+  },
+  {
+    "joker": "Hologram",
+    "effect": "This Joker gains X0.25 Mult every time a playing card is added to your deck (Currently X1 Mult )",
+    "cost": "$7",
+    "rarity": "Uncommon",
+    "type": "Xm",
+    "activation": "Indep.",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/0/07/Hologram.gif"
+  },
+  {
+    "joker": "Vagabond",
+    "effect": "Create a Tarot card if hand is played with $4 or less",
+    "cost": "$8",
+    "rarity": "Rare",
+    "type": "!!",
+    "activation": "Indep.",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/e/e7/Vagabond.png"
+  },
+  {
+    "joker": "Baron",
+    "effect": "Each King held in hand gives X1.5 Mult",
+    "cost": "$8",
+    "rarity": "Rare",
+    "type": "Xm",
+    "activation": "On Held",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/4/40/Baron.png"
+  },
+  {
+    "joker": "Cloud 9",
+    "effect": "Earn $1 for each 9 in your full deck at end of round (Currently $4 )",
+    "cost": "$7",
+    "rarity": "Uncommon",
+    "type": "+$",
+    "activation": "N/A",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/4/4a/Cloud_9.png"
+  },
+  {
+    "joker": "Rocket",
+    "effect": "Earn $1 at end of round. Payout increases by $2 when Boss Blind is defeated",
+    "cost": "$6",
+    "rarity": "Uncommon",
+    "type": "+$",
+    "activation": "N/A",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/f/fb/Rocket.png"
+  },
+  {
+    "joker": "Obelisk",
+    "effect": "This Joker gains X0.2 Mult per consecutive hand played without playing your most played poker hand (Currently X1 Mult )",
+    "cost": "$8",
+    "rarity": "Rare",
+    "type": "Xm",
+    "activation": "Mixed",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/b/be/Obelisk.png"
+  },
+  {
+    "joker": "Midas Mask",
+    "effect": "All played face cards become Gold cards when scored",
+    "cost": "$7",
+    "rarity": "Uncommon",
+    "type": "!!",
+    "activation": "On Played",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/8/84/Midas_Mask.png"
+  },
+  {
+    "joker": "Luchador",
+    "effect": "Sell this card to disable the current Boss Blind",
+    "cost": "$5",
+    "rarity": "Uncommon",
+    "type": "!!",
+    "activation": "N/A",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/6/64/Luchador.png"
+  },
+  {
+    "joker": "Photograph",
+    "effect": "First played face card gives X2 Mult when scored",
+    "cost": "$5",
+    "rarity": "Common",
+    "type": "Xm",
+    "activation": "On Scored",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/0/06/Photograph.png"
+  },
+  {
+    "joker": "Gift Card",
+    "effect": "Add $1 of sell value to every Joker and Consumable card at end of round",
+    "cost": "$6",
+    "rarity": "Uncommon",
+    "type": "+$",
+    "activation": "N/A",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/3/37/Gift_Card.png"
+  },
+  {
+    "joker": "Turtle Bean",
+    "effect": "+5 hand size, reduces by 1 each round",
+    "cost": "$6",
+    "rarity": "Uncommon",
+    "type": "!!",
+    "activation": "N/A",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/c/ca/Turtle_Bean.png"
+  },
+  {
+    "joker": "Erosion",
+    "effect": "+4 Mult for each card below [the deck's starting size] in your full deck (Currently +0 Mult )",
+    "cost": "$6",
+    "rarity": "Uncommon",
+    "type": "+m",
+    "activation": "Indep.",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/3/3a/Erosion.png"
+  },
+  {
+    "joker": "Reserved Parking",
+    "effect": "Each face card held in hand has a 1 in 2 chance to give $1",
+    "cost": "$6",
+    "rarity": "Common",
+    "type": "+$",
+    "activation": "On Held",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/c/c2/Reserved_Parking.png"
+  },
+  {
+    "joker": "Mail-In Rebate",
+    "effect": "Earn $5 for each discarded [rank] , rank changes every round",
+    "cost": "$4",
+    "rarity": "Common",
+    "type": "+$",
+    "activation": "On Discard",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/3/3d/Mail-In_Rebate.png"
+  },
+  {
+    "joker": "To the Moon",
+    "effect": "Earn an extra $1 of interest for every $5 you have at end of round",
+    "cost": "$5",
+    "rarity": "Uncommon",
+    "type": "+$",
+    "activation": "N/A",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/d/d1/To_the_Moon.png"
+  },
+  {
+    "joker": "Hallucination",
+    "effect": "1 in 2 chance to create a Tarot card when any Booster Pack is opened (Must have room)",
+    "cost": "$4",
+    "rarity": "Common",
+    "type": "!!",
+    "activation": "N/A",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/b/bc/Hallucination.png"
+  },
+  {
+    "joker": "Fortune Teller",
+    "effect": "+1 Mult per Tarot card used this run (Currently +0 )",
+    "cost": "$6",
+    "rarity": "Common",
+    "type": "+m",
+    "activation": "Indep.",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/8/8b/Fortune_Teller.png"
+  },
+  {
+    "joker": "Juggler",
+    "effect": "+1 hand size",
+    "cost": "$4",
+    "rarity": "Common",
+    "type": "!!",
+    "activation": "N/A",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/b/be/Juggler.png"
+  },
+  {
+    "joker": "Drunkard",
+    "effect": "+1 discard each round",
+    "cost": "$4",
+    "rarity": "Common",
+    "type": "!!",
+    "activation": "N/A",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/4/48/Drunkard.png"
+  },
+  {
+    "joker": "Stone Joker",
+    "effect": "Gives +25 Chips for each Stone Card in your full deck (Currently +0 Chips )",
+    "cost": "$6",
+    "rarity": "Uncommon",
+    "type": "+c",
+    "activation": "Indep.",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/c/c9/Stone_Joker.png"
+  },
+  {
+    "joker": "Golden Joker",
+    "effect": "Earn $4 at end of round",
+    "cost": "$6",
+    "rarity": "Common",
+    "type": "+$",
+    "activation": "N/A",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/9/9a/Golden_Joker.png"
+  },
+  {
+    "joker": "Lucky Cat",
+    "effect": "This Joker gains X0.25 Mult every time a Lucky card successfully triggers (Currently X1 Mult )",
+    "cost": "$6",
+    "rarity": "Uncommon",
+    "type": "Xm",
+    "activation": "Mixed",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/f/f1/Lucky_Cat.png"
+  },
+  {
+    "joker": "Baseball Card",
+    "effect": "Uncommon Jokers each give X1.5 Mult",
+    "cost": "$8",
+    "rarity": "Rare",
+    "type": "Xm",
+    "activation": "On Other Jokers",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/d/dd/Baseball_Card.png"
+  },
+  {
+    "joker": "Bull",
+    "effect": "+2 Chips for each $1 you have (Currently +0 Chips )",
+    "cost": "$6",
+    "rarity": "Uncommon",
+    "type": "+c",
+    "activation": "Indep.",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/7/7a/Bull.png"
+  },
+  {
+    "joker": "Diet Cola",
+    "effect": "Sell this card to create a free Double Tag",
+    "cost": "$6",
+    "rarity": "Uncommon",
+    "type": "!!",
+    "activation": "N/A",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/5/57/Diet_Cola.png"
+  },
+  {
+    "joker": "Trading Card",
+    "effect": "If first discard of round has only 1 card, destroy it and earn $3",
+    "cost": "$6",
+    "rarity": "Uncommon",
+    "type": "+$",
+    "activation": "On Discard",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/0/0c/Trading_Card.png"
+  },
+  {
+    "joker": "Flash Card",
+    "effect": "This Joker gains +2 Mult per reroll in the shop (Currently +0 Mult )",
+    "cost": "$5",
+    "rarity": "Uncommon",
+    "type": "+m",
+    "activation": "Indep.",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/e/e3/Flash_Card.png"
+  },
+  {
+    "joker": "Popcorn",
+    "effect": "+20 Mult -4 Mult per round played",
+    "cost": "$5",
+    "rarity": "Common",
+    "type": "+m",
+    "activation": "Indep.",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/8/85/Popcorn.png"
+  },
+  {
+    "joker": "Spare Trousers",
+    "effect": "This Joker gains +2 Mult if played hand contains a Two Pair (Currently +0 Mult )",
+    "cost": "$6",
+    "rarity": "Uncommon",
+    "type": "+m",
+    "activation": "Mixed",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/8/85/Spare_Trousers.png"
+  },
+  {
+    "joker": "Ancient Joker",
+    "effect": "Each played card with [suit] gives X1.5 Mult when scored, suit changes at end of round",
+    "cost": "$8",
+    "rarity": "Rare",
+    "type": "Xm",
+    "activation": "On Scored",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/a/a3/Ancient_Joker.png"
+  },
+  {
+    "joker": "Ramen",
+    "effect": "X2 Mult , loses X0.01 Mult per card discarded",
+    "cost": "$6",
+    "rarity": "Uncommon",
+    "type": "Xm",
+    "activation": "Mixed",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/f/f8/Ramen.png"
+  },
+  {
+    "joker": "Walkie Talkie",
+    "effect": "Each played 10 or 4 gives +10 Chips and +4 Mult when scored",
+    "cost": "$4",
+    "rarity": "Common",
+    "type": "++",
+    "activation": "On Scored",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/a/a3/Walkie_Talkie.png"
+  },
+  {
+    "joker": "Seltzer",
+    "effect": "Retrigger all cards played for the next 10 hands",
+    "cost": "$6",
+    "rarity": "Uncommon",
+    "type": "...",
+    "activation": "On Scored",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/6/69/Seltzer.png"
+  },
+  {
+    "joker": "Castle",
+    "effect": "This Joker gains +3 Chips per discarded [suit] card, suit changes every round (Currently +0 Chips )",
+    "cost": "$6",
+    "rarity": "Uncommon",
+    "type": "+c",
+    "activation": "Mixed",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/1/1f/Castle.png"
+  },
+  {
+    "joker": "Smiley Face",
+    "effect": "Played face cards give +5 Mult when scored",
+    "cost": "$4",
+    "rarity": "Common",
+    "type": "+m",
+    "activation": "On Scored",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/6/6f/Smiley_Face.png"
+  },
+  {
+    "joker": "Campfire",
+    "effect": "This Joker gains X0.25 Mult for each card sold , resets when Boss Blind is defeated (Currently X1 Mult )",
+    "cost": "$9",
+    "rarity": "Rare",
+    "type": "Xm",
+    "activation": "Indep.",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/0/01/Campfire.png"
+  },
+  {
+    "joker": "Golden Ticket",
+    "effect": "Played Gold cards earn $4 when scored",
+    "cost": "$5",
+    "rarity": "Common",
+    "type": "+$",
+    "activation": "On Scored",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/c/cf/Golden_Ticket.png"
+  },
+  {
+    "joker": "Mr. Bones",
+    "effect": "Prevents Death if chips scored are at least 25% of required chips self destructs",
+    "cost": "$5",
+    "rarity": "Uncommon",
+    "type": "!!",
+    "activation": "N/A",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/1/11/Mr._Bones.png"
+  },
+  {
+    "joker": "Acrobat",
+    "effect": "X3 Mult on final hand of round",
+    "cost": "$6",
+    "rarity": "Uncommon",
+    "type": "Xm",
+    "activation": "Indep.",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/8/8f/Acrobat.png"
+  },
+  {
+    "joker": "Sock and Buskin",
+    "effect": "Retrigger all played face cards",
+    "cost": "$6",
+    "rarity": "Uncommon",
+    "type": "...",
+    "activation": "On Scored",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/4/48/Sock_and_Buskin.png"
+  },
+  {
+    "joker": "Swashbuckler",
+    "effect": "Adds the sell value of all other owned Jokers to Mult (Currently +1 Mult )",
+    "cost": "$4",
+    "rarity": "Common",
+    "type": "+m",
+    "activation": "Indep.",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/8/88/Swashbuckler.png"
+  },
+  {
+    "joker": "Troubadour",
+    "effect": "+2 hand size, -1 hand per round",
+    "cost": "$6",
+    "rarity": "Uncommon",
+    "type": "!!",
+    "activation": "N/A",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/6/64/Troubadour.png"
+  },
+  {
+    "joker": "Certificate",
+    "effect": "When round begins, add a random playing card with a random seal to your hand",
+    "cost": "$6",
+    "rarity": "Uncommon",
+    "type": "!!",
+    "activation": "N/A",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/e/e5/Certificate.png"
+  },
+  {
+    "joker": "Smeared Joker",
+    "effect": "Hearts and Diamonds count as the same suit, Spades and Clubs count as the same suit",
+    "cost": "$7",
+    "rarity": "Uncommon",
+    "type": "!!",
+    "activation": "N/A",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/7/7d/Smeared_Joker.png"
+  },
+  {
+    "joker": "Throwback",
+    "effect": "X0.25 Mult for each Blind skipped this run (Currently X1 Mult )",
+    "cost": "$6",
+    "rarity": "Uncommon",
+    "type": "Xm",
+    "activation": "Indep.",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/6/69/Throwback.png"
+  },
+  {
+    "joker": "Hanging Chad",
+    "effect": "Retrigger first played card used in scoring 2 additional times",
+    "cost": "$4",
+    "rarity": "Common",
+    "type": "...",
+    "activation": "On Scored",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/1/15/Hanging_Chad.png"
+  },
+  {
+    "joker": "Rough Gem",
+    "effect": "Played cards with Diamond suit earn $1 when scored",
+    "cost": "$7",
+    "rarity": "Uncommon",
+    "type": "+$",
+    "activation": "On Scored",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/2/27/Rough_Gem.png"
+  },
+  {
+    "joker": "Bloodstone",
+    "effect": "1 in 2 chance for played cards with Heart suit to give X1.5 Mult when scored",
+    "cost": "$7",
+    "rarity": "Uncommon",
+    "type": "Xm",
+    "activation": "On Scored",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/0/00/Bloodstone.png"
+  },
+  {
+    "joker": "Arrowhead",
+    "effect": "Played cards with Spade suit give +50 Chips when scored",
+    "cost": "$7",
+    "rarity": "Uncommon",
+    "type": "+c",
+    "activation": "On Scored",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/d/d1/Arrowhead.png"
+  },
+  {
+    "joker": "Onyx Agate",
+    "effect": "Played cards with Club suit give +7 Mult when scored",
+    "cost": "$7",
+    "rarity": "Uncommon",
+    "type": "+m",
+    "activation": "On Scored",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/2/23/Onyx_Agate.png"
+  },
+  {
+    "joker": "Glass Joker",
+    "effect": "This Joker gains X0.75 Mult for every Glass Card that is destroyed (Currently X1 Mult )",
+    "cost": "$6",
+    "rarity": "Uncommon",
+    "type": "Xm",
+    "activation": "Indep.",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/d/df/Glass_Joker.png"
+  },
+  {
+    "joker": "Showman",
+    "effect": "Joker , Tarot , Planet , and Spectral cards may appear multiple times",
+    "cost": "$5",
+    "rarity": "Uncommon",
+    "type": "!!",
+    "activation": "N/A",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/6/61/Showman.png"
+  },
+  {
+    "joker": "Flower Pot",
+    "effect": "X3 Mult if poker hand contains a Diamond card, Club card, Heart card, and Spade card",
+    "cost": "$6",
+    "rarity": "Uncommon",
+    "type": "Xm",
+    "activation": "Indep.",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/c/cc/Flower_Pot.png"
+  },
+  {
+    "joker": "Blueprint",
+    "effect": "Copies ability of Joker to the right",
+    "cost": "$10",
+    "rarity": "Rare",
+    "type": "!!",
+    "activation": "",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/9/98/Blueprint.png"
+  },
+  {
+    "joker": "Wee Joker",
+    "effect": "This Joker gains +8 Chips when each played 2 is scored (Currently +0 Chips )",
+    "cost": "$8",
+    "rarity": "Rare",
+    "type": "+c",
+    "activation": "Mixed",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/2/2b/Wee_Joker.png"
+  },
+  {
+    "joker": "Merry Andy",
+    "effect": "+3 discards each round, -1 hand size",
+    "cost": "$7",
+    "rarity": "Uncommon",
+    "type": "!!",
+    "activation": "N/A",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/e/e6/Merry_Andy.png"
+  },
+  {
+    "joker": "Oops! All 6s",
+    "effect": "Doubles all listed probabilities (ex: 1 in 3 -> 2 in 3 )",
+    "cost": "$4",
+    "rarity": "Uncommon",
+    "type": "!!",
+    "activation": "N/A",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/2/25/Oops%21_All_6s.png"
+  },
+  {
+    "joker": "The Idol",
+    "effect": "Each played [rank] of [suit] gives X2 Mult when scored Card changes every round",
+    "cost": "$6",
+    "rarity": "Uncommon",
+    "type": "Xm",
+    "activation": "On Scored",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/8/8f/The_Idol.png"
+  },
+  {
+    "joker": "Seeing Double",
+    "effect": "X2 Mult if played hand has a scoring Club card and a scoring card of any other suit",
+    "cost": "$6",
+    "rarity": "Uncommon",
+    "type": "Xm",
+    "activation": "Indep.",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/a/a1/Seeing_Double.png"
+  },
+  {
+    "joker": "Matador",
+    "effect": "Earn $8 if played hand triggers the Boss Blind ability",
+    "cost": "$7",
+    "rarity": "Uncommon",
+    "type": "+$",
+    "activation": "Indep.",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/e/ec/Matador.png"
+  },
+  {
+    "joker": "Hit the Road",
+    "effect": "This Joker gains X0.5 Mult for every Jack discarded this round (Currently X1 Mult )",
+    "cost": "$8",
+    "rarity": "Rare",
+    "type": "Xm",
+    "activation": "Mixed",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/4/4b/Hit_the_Road.png"
+  },
+  {
+    "joker": "The Duo",
+    "effect": "X2 Mult if played hand contains a Pair",
+    "cost": "$8",
+    "rarity": "Rare",
+    "type": "Xm",
+    "activation": "Indep.",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/f/fb/The_Duo.png"
+  },
+  {
+    "joker": "The Trio",
+    "effect": "X3 Mult if played hand contains a Three of a Kind",
+    "cost": "$8",
+    "rarity": "Rare",
+    "type": "Xm",
+    "activation": "Indep.",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/8/81/The_Trio.png"
+  },
+  {
+    "joker": "The Family",
+    "effect": "X4 Mult if played hand contains a Four of a Kind",
+    "cost": "$8",
+    "rarity": "Rare",
+    "type": "Xm",
+    "activation": "Indep.",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/a/ae/The_Family.png"
+  },
+  {
+    "joker": "The Order",
+    "effect": "X3 Mult if played hand contains a Straight",
+    "cost": "$8",
+    "rarity": "Rare",
+    "type": "Xm",
+    "activation": "Indep.",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/5/59/The_Order.png"
+  },
+  {
+    "joker": "The Tribe",
+    "effect": "X2 Mult if played hand contains a Flush",
+    "cost": "$8",
+    "rarity": "Rare",
+    "type": "Xm",
+    "activation": "Indep.",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/9/9a/The_Tribe.png"
+  },
+  {
+    "joker": "Stuntman",
+    "effect": "+250 Chips , -2 hand size",
+    "cost": "$7",
+    "rarity": "Rare",
+    "type": "+c",
+    "activation": "Indep.",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/9/9b/Stuntman.png"
+  },
+  {
+    "joker": "Invisible Joker",
+    "effect": "After 2 rounds, sell this card to Duplicate a random Joker (Currently 0 /2) (Removes Negative from copy)",
+    "cost": "$8",
+    "rarity": "Rare",
+    "type": "!!",
+    "activation": "N/A",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/a/a6/Invisible_Joker.png"
+  },
+  {
+    "joker": "Brainstorm",
+    "effect": "Copies the ability of leftmost Joker",
+    "cost": "$10",
+    "rarity": "Rare",
+    "type": "!!",
+    "activation": "",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/8/84/Brainstorm.png"
+  },
+  {
+    "joker": "Satellite",
+    "effect": "Earn $1 at end of round per unique Planet card used this run",
+    "cost": "$6",
+    "rarity": "Uncommon",
+    "type": "+$",
+    "activation": "N/A",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/5/5a/Satellite.png"
+  },
+  {
+    "joker": "Shoot the Moon",
+    "effect": "Each Queen held in hand gives +13 Mult",
+    "cost": "$5",
+    "rarity": "Common",
+    "type": "+m",
+    "activation": "On Held",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/5/57/Shoot_the_Moon.png"
+  },
+  {
+    "joker": "Driver's License",
+    "effect": "X3 Mult if you have at least 16 Enhanced cards in your full deck (Currently 0 )",
+    "cost": "$7",
+    "rarity": "Rare",
+    "type": "Xm",
+    "activation": "Indep.",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/e/e0/Driver%27s_License.png"
+  },
+  {
+    "joker": "Cartomancer",
+    "effect": "Create a Tarot card when Blind is selected (Must have room)",
+    "cost": "$6",
+    "rarity": "Uncommon",
+    "type": "!!",
+    "activation": "N/A",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/9/94/Cartomancer.png"
+  },
+  {
+    "joker": "Astronomer",
+    "effect": "All Planet cards and Celestial Packs in the shop are free",
+    "cost": "$8",
+    "rarity": "Uncommon",
+    "type": "!!",
+    "activation": "N/A",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/d/dd/Astronomer.png"
+  },
+  {
+    "joker": "Burnt Joker",
+    "effect": "Upgrade the level of the first discarded poker hand each round",
+    "cost": "$8",
+    "rarity": "Rare",
+    "type": "!!",
+    "activation": "On Discard",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/c/c4/Burnt_Joker.png"
+  },
+  {
+    "joker": "Bootstraps",
+    "effect": "+2 Mult for every $5 you have (Currently +0 Mult )",
+    "cost": "$7",
+    "rarity": "Uncommon",
+    "type": "+m",
+    "activation": "Indep.",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/e/e3/Bootstraps.png"
+  },
+  {
+    "joker": "Canio",
+    "effect": "This Joker gains X1 Mult when a face card is destroyed (Currently X1 Mult )",
+    "cost": "N/A",
+    "rarity": "Legendary",
+    "type": "Xm",
+    "activation": "Indep.",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/7/75/Canio.png"
+  },
+  {
+    "joker": "Triboulet",
+    "effect": "Played Kings and Queens each give X2 Mult when scored",
+    "cost": "N/A",
+    "rarity": "Legendary",
+    "type": "Xm",
+    "activation": "On Scored",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/9/9f/Triboulet.png"
+  },
+  {
+    "joker": "Yorick",
+    "effect": "This Joker gains X1 Mult every 23 [23] cards discarded (Currently X1 Mult )",
+    "cost": "N/A",
+    "rarity": "Legendary",
+    "type": "Xm",
+    "activation": "Mixed",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/a/ad/Yorick.png"
+  },
+  {
+    "joker": "Chicot",
+    "effect": "Disables effect of every Boss Blind",
+    "cost": "N/A",
+    "rarity": "Legendary",
+    "type": "!!",
+    "activation": "N/A",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/8/8e/Chicot.png"
+  },
+  {
+    "joker": "Perkeo",
+    "effect": "Creates a Negative copy of 1 random consumable card in your possession at the end of the shop",
+    "cost": "N/A",
+    "rarity": "Legendary",
+    "type": "!!",
+    "activation": "N/A",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/6/60/Perkeo.png"
+  }
+]

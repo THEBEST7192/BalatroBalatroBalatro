@@ -1,0 +1,226 @@
+[
+  {
+    "voucher_type": "Base Voucher",
+    "name": "Overstock",
+    "effect": "+1 card slot available in shop (to 3 slots)",
+    "note": "Also immediately restocks any empty card slots in the Shop when purchased",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/8/8e/Overstock.png"
+  },
+  {
+    "voucher_type": "Upgraded Voucher",
+    "name": "Overstock Plus",
+    "effect": "+1 card slot available in shop (to 4 slots)",
+    "note": "Also immediately restocks any empty card slots in the Shop when purchased",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/3/3e/Overstock_Plus.png"
+  },
+  {
+    "voucher_type": "Base Voucher",
+    "name": "Clearance Sale",
+    "effect": "All cards and packs in shop are 25% off",
+    "note": "Also reduces the sell value of your present jokers Prices are rounded half down",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/7/71/Clearance_Sale.png"
+  },
+  {
+    "voucher_type": "Upgraded Voucher",
+    "name": "Liquidation",
+    "effect": "All cards and packs in shop are 50% off",
+    "note": "Also reduces the sell value of your present jokers Prices are rounded half down",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/6/6c/Liquidation.png"
+  },
+  {
+    "voucher_type": "Base Voucher",
+    "name": "Hone",
+    "effect": "Foil, Holographic, and Polychrome cards appear 2x more often",
+    "note": "Polychrome on Jokers actually appears 3x more often for Hone and 7x more often for Glow Up",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/4/4b/Hone.png"
+  },
+  {
+    "voucher_type": "Upgraded Voucher",
+    "name": "Glow Up",
+    "effect": "Foil, Holographic, and Polychrome cards appear 4x more often",
+    "note": "Polychrome on Jokers actually appears 3x more often for Hone and 7x more often for Glow Up",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/d/d9/Glow_Up.png"
+  },
+  {
+    "voucher_type": "Base Voucher",
+    "name": "Reroll Surplus",
+    "effect": "Rerolls cost $2 less",
+    "note": "",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/a/a4/Reroll_Surplus.png"
+  },
+  {
+    "voucher_type": "Upgraded Voucher",
+    "name": "Reroll Glut",
+    "effect": "Rerolls cost an additional $2 less",
+    "note": "",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/4/4b/Reroll_Glut.png"
+  },
+  {
+    "voucher_type": "Base Voucher",
+    "name": "Crystal Ball",
+    "effect": "+1 consumable slot",
+    "note": "Omen Globe has a 20% individual chance to replace the Tarot card with a Spectral card for every card in the Arcana Pack",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/e/e2/Crystal_Ball.png"
+  },
+  {
+    "voucher_type": "Upgraded Voucher",
+    "name": "Omen Globe",
+    "effect": "Spectral cards may appear in any of the Arcana Packs",
+    "note": "Omen Globe has a 20% individual chance to replace the Tarot card with a Spectral card for every card in the Arcana Pack",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/f/fb/Omen_Globe.png"
+  },
+  {
+    "voucher_type": "Base Voucher",
+    "name": "Telescope",
+    "effect": "Celestial Packs always contain the Planet card for your most played poker hand",
+    "note": "Telescope picks the higher tier hand in case of multiple most played hands",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/6/6c/Telescope.png"
+  },
+  {
+    "voucher_type": "Upgraded Voucher",
+    "name": "Observatory",
+    "effect": "Planet cards in your consumable area give X1.5 Mult for their specified poker hand",
+    "note": "Telescope picks the higher tier hand in case of multiple most played hands",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/b/b4/Observatory.png"
+  },
+  {
+    "voucher_type": "Base Voucher",
+    "name": "Grabber",
+    "effect": "Permanently gain +1 hand per round",
+    "note": "",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/e/ee/Grabber.png"
+  },
+  {
+    "voucher_type": "Upgraded Voucher",
+    "name": "Nacho Tong",
+    "effect": "Permanently gain an additional +1 hand per round",
+    "note": "",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/b/b6/Nacho_Tong.png"
+  },
+  {
+    "voucher_type": "Base Voucher",
+    "name": "Wasteful",
+    "effect": "Permanently gain +1 discard each round",
+    "note": "",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/d/df/Wasteful.png"
+  },
+  {
+    "voucher_type": "Upgraded Voucher",
+    "name": "Recyclomancy",
+    "effect": "Permanently gain an additional +1 discard each round",
+    "note": "",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/c/c4/Recyclomancy.png"
+  },
+  {
+    "voucher_type": "Base Voucher",
+    "name": "Tarot Merchant",
+    "effect": "Tarot cards appear 2X more frequently in the shop",
+    "note": "",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/3/32/Tarot_Merchant.png"
+  },
+  {
+    "voucher_type": "Upgraded Voucher",
+    "name": "Tarot Tycoon",
+    "effect": "Tarot cards appear 4X more frequently in the shop",
+    "note": "",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/9/9e/Tarot_Tycoon.png"
+  },
+  {
+    "voucher_type": "Base Voucher",
+    "name": "Planet Merchant",
+    "effect": "Planet cards appear 2X more frequently in the shop",
+    "note": "",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/b/bf/Planet_Merchant.png"
+  },
+  {
+    "voucher_type": "Upgraded Voucher",
+    "name": "Planet Tycoon",
+    "effect": "Planet cards appear 4X more frequently in the shop",
+    "note": "",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/1/10/Planet_Tycoon.png"
+  },
+  {
+    "voucher_type": "Base Voucher",
+    "name": "Seed Money",
+    "effect": "Raise the cap on interest earned in each round to $10",
+    "note": "Does nothing when playing the Green Deck.",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/b/be/Seed_Money.png"
+  },
+  {
+    "voucher_type": "Upgraded Voucher",
+    "name": "Money Tree",
+    "effect": "Raise the cap on interest earned in each round to $20",
+    "note": "Does nothing when playing the Green Deck.",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/9/9a/Money_Tree.png"
+  },
+  {
+    "voucher_type": "Base Voucher",
+    "name": "Blank",
+    "effect": "Does nothing?",
+    "note": "The Antimatter Voucher is always displayed in game as if it was a negative edition and applies the same effect as negative Jokers",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/d/d2/Blank.png"
+  },
+  {
+    "voucher_type": "Upgraded Voucher",
+    "name": "Antimatter",
+    "effect": "+1 Joker slot",
+    "note": "The Antimatter Voucher is always displayed in game as if it was a negative edition and applies the same effect as negative Jokers",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/2/2b/In-Game_Antimatter.png"
+  },
+  {
+    "voucher_type": "Base Voucher",
+    "name": "Magic Trick",
+    "effect": "Playing cards can be purchased from the shop",
+    "note": "Illusion is currently (v1.0.1o-FULL) bugged, and cards in the shop cannot have seals, only enhancements and/or editions, and is unaffected by Hone/Glow Up.",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/b/b4/Magic_Trick.png"
+  },
+  {
+    "voucher_type": "Upgraded Voucher",
+    "name": "Illusion",
+    "effect": "Playing cards in shop may have an Enhancement , Edition , and/or a Seal",
+    "note": "Illusion is currently (v1.0.1o-FULL) bugged, and cards in the shop cannot have seals, only enhancements and/or editions, and is unaffected by Hone/Glow Up.",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/4/47/Illusion.png"
+  },
+  {
+    "voucher_type": "Base Voucher",
+    "name": "Hieroglyph",
+    "effect": "-1 Ante, -1 hand each round",
+    "note": "",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/7/70/Hieroglyph.png"
+  },
+  {
+    "voucher_type": "Upgraded Voucher",
+    "name": "Petroglyph",
+    "effect": "-1 Ante, -1 discard each round",
+    "note": "",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/f/f3/Petroglyph.png"
+  },
+  {
+    "voucher_type": "Base Voucher",
+    "name": "Director's Cut",
+    "effect": "Reroll Boss Blind 1 time per Ante, $10 per roll",
+    "note": "",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/8/8c/Director%27s_Cut.png"
+  },
+  {
+    "voucher_type": "Upgraded Voucher",
+    "name": "Retcon",
+    "effect": "Reroll Boss Blind unlimited times, $10 per roll",
+    "note": "",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/9/92/Retcon.png"
+  },
+  {
+    "voucher_type": "Base Voucher",
+    "name": "Paint Brush",
+    "effect": "+1 hand size",
+    "note": "",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/e/ea/Paint_Brush.png"
+  },
+  {
+    "voucher_type": "Upgraded Voucher",
+    "name": "Palette",
+    "effect": "+1 hand size again",
+    "note": "",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/f/f6/Palette.png"
+  }
+]

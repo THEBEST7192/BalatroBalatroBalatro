@@ -1,0 +1,92 @@
+[
+  {
+    "spectral_card": "Familiar",
+    "description": "Destroy\n1\nrandom card in your hand, but add\n3\nrandom\nEnhanced\nface cards\ninstead.",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/2/2c/Spectral_Familiar.png"
+  },
+  {
+    "spectral_card": "Grim",
+    "description": "Destroy\n1\nrandom card in your hand, but add\n2\nrandom\nEnhanced\nAces\ninstead.",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/e/e0/Spectral_Grim.png"
+  },
+  {
+    "spectral_card": "Incantation",
+    "description": "Destroy\n1\nrandom card in your hand, but add\n4\nrandom\nEnhanced\nnumbered cards\ninstead.",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/6/65/Spectral_Incantation.png"
+  },
+  {
+    "spectral_card": "Talisman",
+    "description": "Add a\nGold Seal\nto\n1\nselected card.",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/3/34/Spectral_Talisman.png"
+  },
+  {
+    "spectral_card": "Aura",
+    "description": "Add\nFoil\n,\nHolographic\n, or\nPolychrome\nedition\n(determined at random) to\n1\nselected card in hand.",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/4/47/Spectral_Aura.png"
+  },
+  {
+    "spectral_card": "Wraith",
+    "description": "Creates a random\nRare\nJoker\n(must have room), but sets money to\n$0\n.",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/4/48/Spectral_Wraith.png"
+  },
+  {
+    "spectral_card": "Sigil",
+    "description": "Converts all cards in hand to a single random\nsuit\n.",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/5/5d/Spectral_Sigil.png"
+  },
+  {
+    "spectral_card": "Ouija",
+    "description": "Converts all cards in hand to a single random\nrank\n, but\n-1\nhand size.",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/f/fc/Spectral_Ouija.png"
+  },
+  {
+    "spectral_card": "Ectoplasm",
+    "description": "Add\nNegative\nto a random\nJoker\n, but\n-1\nhand size, plus another\n-1\nhand size for each time Ectoplasm has been used this run, e.g. using Ectoplasm 3 times in the same run decreases hand size by a total of 6 (1+2+3)",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/e/e5/Spectral_Ectoplasm.png"
+  },
+  {
+    "spectral_card": "Immolate",
+    "description": "Destroys\n5\nrandom cards in hand, but gain\n$20\n.",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/d/d8/Spectral_Immolate.png"
+  },
+  {
+    "spectral_card": "Ankh",
+    "description": "Creates a copy of 1 of your Jokers at random, then destroys the others, leaving you with two identical Jokers. (\nEditions\nare also copied, except Negative)",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/e/ec/Spectral_Ankh.png"
+  },
+  {
+    "spectral_card": "Deja Vu",
+    "description": "Adds a\nRed Seal\nto\n1\nselected card.",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/a/a0/Spectral_Deja_Vu.png"
+  },
+  {
+    "spectral_card": "Hex",
+    "description": "Adds\nPolychrome\nto a random\nJoker\n, and destroys the rest.",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/f/f4/Spectral_Hex.png"
+  },
+  {
+    "spectral_card": "Trance",
+    "description": "Adds a\nBlue Seal\nto 1 selected card.",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/7/78/Spectral_Trance.png"
+  },
+  {
+    "spectral_card": "Medium",
+    "description": "Adds a\nPurple Seal\nto 1 selected card.",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/e/e1/Spectral_Medium.png"
+  },
+  {
+    "spectral_card": "Cryptid",
+    "description": "Creates 2 exact copies (including\nEnhancements, Editions and Seals\n) of a selected card in your hand.",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/5/5d/Spectral_Cryptid.png"
+  },
+  {
+    "spectral_card": "The Soul",
+    "description": "Creates a\nLegendary\nJoker\n(Must have room)\nArtwork: This card is animated, with the gem beating like a heart, or perhaps something inside is trying to break out...",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/6/6b/Spectral_The_Soul.png"
+  },
+  {
+    "spectral_card": "Black Hole",
+    "description": "Upgrades every\npoker hand\n(including secret hands not yet discovered) by one level.",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/0/00/Spectral_Black_Hole.png"
+  }
+]

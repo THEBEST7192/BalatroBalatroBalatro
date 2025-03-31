@@ -1,0 +1,112 @@
+[
+  {
+    "tarot_card": "The Fool (0)",
+    "description": "Creates the last\nTarot\nor\nPlanet\ncard used during this run\nThe Fool\nexcluded",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/6/61/Tarot_The_Fool.png"
+  },
+  {
+    "tarot_card": "The Magician (I)",
+    "description": "Enhances\n2\nselected cards to\nLucky Cards",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/7/78/Tarot_The_Magician.png"
+  },
+  {
+    "tarot_card": "The High Priestess (II)",
+    "description": "Creates up to\n2\nrandom\nPlanet\ncards\n(Must have room)",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/c/cc/Tarot_The_High_Priestess.png"
+  },
+  {
+    "tarot_card": "The Empress (III)",
+    "description": "Enhances\n2\nselected cards to\nMult Cards",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/8/8b/Tarot_The_Empress.png"
+  },
+  {
+    "tarot_card": "The Emperor (IV)",
+    "description": "Creates up to\n2\nrandom\nTarot\ncards\n(Must have room)",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/1/11/Tarot_The_Emperor.png"
+  },
+  {
+    "tarot_card": "The Hierophant (V)",
+    "description": "Enhances\n2\nselected cards to\nBonus Cards",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/b/bc/Tarot_The_Hierophant.png"
+  },
+  {
+    "tarot_card": "The Lovers (VI)",
+    "description": "Enhances\n1\nselected card into a\nWild Card",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/4/4c/Tarot_The_Lovers.png"
+  },
+  {
+    "tarot_card": "The Chariot (VII)",
+    "description": "Enhances\n1\nselected card into a\nSteel Card",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/f/f8/Tarot_The_Chariot.png"
+  },
+  {
+    "tarot_card": "Justice (VIII)",
+    "description": "Enhances\n1\nselected card into a\nGlass Card",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/4/45/Tarot_Justice.png"
+  },
+  {
+    "tarot_card": "The Hermit (IX)",
+    "description": "Doubles money\n(Max of\n$20\n)",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/1/19/Tarot_The_Hermit.png"
+  },
+  {
+    "tarot_card": "The Wheel of Fortune (X)",
+    "description": "1 in 4\nchance to add\nFoil\n,\nHolographic\n, or\nPolychrome\nedition to a random\nJoker",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/5/57/Tarot_The_Wheel_of_Fortune.png"
+  },
+  {
+    "tarot_card": "Strength (XI)",
+    "description": "Increases rank of up to\n2\nselected cards by\n1\n(For example, 4 to 5, 10 to Jack, King to Ace, Ace to 2.)",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/7/7d/Tarot_Strength.png"
+  },
+  {
+    "tarot_card": "The Hanged Man (XII)",
+    "description": "Destroys up to\n2\nselected cards",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/d/d6/Tarot_The_Hanged_Man.png"
+  },
+  {
+    "tarot_card": "Death (XIII)",
+    "description": "Select\n2\ncards, convert the\nleft\ncard into the\nright\ncard\n(Drag to rearrange)",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/4/4d/Tarot_Death.png"
+  },
+  {
+    "tarot_card": "Temperance (XIV)",
+    "description": "Gives the total sell value of all current\nJokers\n(Max of\n$50\n)",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/6/67/Tarot_Temperance.png"
+  },
+  {
+    "tarot_card": "The Devil (XV)",
+    "description": "Enhances\n1\nselected card into a\nGold Card",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/7/72/Tarot_The_Devil.png"
+  },
+  {
+    "tarot_card": "The Tower (XVI)",
+    "description": "Enhances\n1\nselected card into a\nStone Card",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/a/af/Tarot_The_Tower.png"
+  },
+  {
+    "tarot_card": "The Star (XVII)",
+    "description": "Converts up to\n3\nselected cards to\nDiamonds",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/e/e1/Tarot_The_Star.png"
+  },
+  {
+    "tarot_card": "The Moon (XVIII)",
+    "description": "Converts up to\n3\nselected cards to\nClubs",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/2/29/Tarot_The_Moon.png"
+  },
+  {
+    "tarot_card": "The Sun (XIX)",
+    "description": "Converts up to\n3\nselected cards to\nHearts",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/2/2e/Tarot_The_Sun.png"
+  },
+  {
+    "tarot_card": "Judgement (XX)",
+    "description": "Creates a random\nJoker\ncard\n(Must have room)",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/d/d9/Tarot_Judgement.png"
+  },
+  {
+    "tarot_card": "The World (XXI)",
+    "description": "Converts up to\n3\nselected cards to\nSpades",
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/4/49/Tarot_The_World.png"
+  }
+]
