@@ -12,6 +12,9 @@ import spectral from './spectral.json';
 // Import the BossBlinds component
 import BossBlinds from './BossBlinds';
 
+// Import the RNG component
+import RNGPage from './RNGPage';
+
 function App() {
   const [selectedTab, setSelectedTab] = useState("cards");
 
@@ -169,6 +172,7 @@ function App() {
         <nav>
           <button onClick={() => setSelectedTab("cards")}>Card Gallery</button>
           <button onClick={() => setSelectedTab("bossblinds")}>Boss Blinds</button>
+          <button onClick={() => setSelectedTab("rngpage")}>RNG</button>
         </nav>
       </header>
       
@@ -265,6 +269,7 @@ function App() {
       )}
 
       {selectedTab === "bossblinds" && <BossBlinds />}
+      {selectedTab === "rngpage" && <RNGPage/>}
     </div>
   );
 }

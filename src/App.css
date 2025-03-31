@@ -15,6 +15,18 @@ body {
   padding: 20px;
 }
 
+
+select {
+  font-family: balatro, Arial, sans-serif;
+  position: relative;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  max-width: 500px;
+  margin: 20px auto;
+  background-color: #f9f9f9;
+}
+
 .search-bar {
   font-family: 'balatro', Arial, sans-serif;  
   width: 80%;
