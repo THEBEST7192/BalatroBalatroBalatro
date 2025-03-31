@@ -11,10 +11,10 @@ import spectral from './spectral.json';
 function App() {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCard, setSelectedCard] = useState(null);
+  const [cardsPerRow, setCardsPerRow] = useState(8); // slider state
 
   // Normalize each card so that it has a common "name", "type", and "image_url"
   const normalizeCard = (card) => {
-    // Determine the display name:
     const name =
       card.name ||
       card.joker ||
@@ -35,7 +35,6 @@ function App() {
     } else if (card.spectral_card) {
       type = "Spectral";
     }
-    // Normalize image URL: if missing, fallback to a placeholder
     const image_url = card.image_url || 'https://via.placeholder.com/150';
     return { ...card, name, type, image_url };
   };
@@ -49,12 +48,12 @@ function App() {
     ...spectral.map(normalizeCard),
   ];
 
-  // Live filtering (ignores cards missing a name)
+  // Live filtering
   const filteredCards = combinedData.filter((card) =>
     card.name && card.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
-  // Helper to display the card's name (which is normalized)
+  // Helper for display name
   const displayName = (card) => card.name;
 
   // Custom key labels for display
@@ -70,9 +69,77 @@ function App() {
     tarot_card: "Tarot Card",
     spectral_card: "Spectral Card",
     voucher_type: "Voucher Type",
-    description: "Description",
-    note: "Note"
+    note: "Note",
+    description: "Description"
   };
+
+  // Function to highlight keywords in the text
+  const highlightText = (text) => {
+    if (!text) return text;
+    const multPattern = /\+\d+\s*(mult|Mult|multiplication|Multiplication)\b/gi;
+    const xmultPattern = /x\d+\s*(mult|Mult|multiplication|Multiplication)\b/gi;
+    const chipPattern = /\+\d+\s*(chip|Chip|chips|Chips)\b/gi;
+    const dollarPattern = /\$\d+/g;
+    // Card suits
+    const heartsPattern = /\b(heart|Heart|hearts|Hearts)\b/gi;
+    const diamondsPattern = /\b(diamond|Diamond|diamonds|Diamonds)\b/gi;
+    const clubsPattern = /\b(club|Club|clubs|Clubs)\b/gi;
+    const spadesPattern = /\b(spade|Spade|spades|Spades)\b/gi;
+
+    // Card rarity
+    const uncommonRarity = /\b(uncommon|Uncommon)\b/gi;
+    const commonRarity = /\b(common|Common)\b/gi; 
+    const rareRarity = /\b(rare|Rare)\b/gi;
+    const legendaryRarity = /\b(legendary|Legendary)\b/gi;
+
+    // Card type
+    const tarotType = /\b(tarot|Tarot|tarots|Tarots|tarotCards)\b/gi;
+    const planetType = /\b(planet|Planet)\b/gi;
+    const voucherType = /\b(voucher|Voucher|Base Voucher|Upgraded Voucher)\b/gi;
+    const spectralType = /\b(spectral|Spectral)\b/gi;
+    
+
+    const highlightedText = text
+        // Keywords (plus mult, x mult, chips, $)
+      .replace(multPattern, (match) => `<span class="highlight-plusmult">${match}</span>`)
+      .replace(xmultPattern, (match) => `<span class="highlight-xmult">${match}</span>`)
+      .replace(chipPattern, (match) => `<span class="highlight-chips">${match}</span>`)      
+      .replace(dollarPattern, (match) => `<span class="highlight-money">${match}</span>`)
+
+      // Card suits
+      .replace(heartsPattern, (match) => `<span class="highlight-hearts">${match}</span>`)
+      .replace(diamondsPattern, (match) => `<span class="highlight-diamonds">${match}</span>`)
+      .replace(clubsPattern, (match) => `<span class="highlight-clubs">${match}</span>`)
+      .replace(spadesPattern, (match) => `<span class="highlight-spades">${match}</span>`)
+
+      // Rarity
+      .replace(commonRarity, (match) => `<span class="rarity-commonTxt">${match}</span>`)
+      .replace(uncommonRarity, (match) => `<span class="rarity-uncommonTxt">${match}</span>`)
+      .replace(rareRarity, (match) => `<span class="rarity-rareTxt">${match}</span>`)
+      .replace(legendaryRarity, (match) => `<span class="rarity-legendaryTxt">${match}</span>`)
+
+      // Card type
+      .replace(tarotType, (match) => `<span class="tarotTxt">${match}</span>`)
+      .replace(planetType, (match) => `<span class="planetTxt">${match}</span>`)
+      .replace(voucherType, (match) => `<span class="voucherTxt">${match}</span>`)
+      .replace(spectralType, (match) => `<span class="spectralTxt">${match}</span>`);
+
+
+
+    return highlightedText;
+  };
+
+  // Helper function to determine the card container class based on its type or rarity.
+  // For jokers, use the rarity (e.g., rarity-common, rarity-rare). For the rest, use type.
+  const getCardClass = (card) => {
+    console.log("Card Type:", card.type); // Debugging output
+  
+    if (card.type === "Joker" && card.rarity) {
+      return `card rarity-${card.rarity.toLowerCase()}`;
+    }
+    return `card ${card.type.toLowerCase()}`;
+  };
+  
 
   return (
     <div className="App">
@@ -84,11 +151,29 @@ function App() {
         onChange={(e) => setSearchTerm(e.target.value)}
         className="search-bar"
       />
-      <div className="card-container">
+      <div className="slider-container">
+        <label htmlFor="cardsPerRow">Cards per row: {cardsPerRow}</label>
+        <input
+          type="range"
+          id="cardsPerRow"
+          min="5"
+          max="30"
+          value={cardsPerRow}
+          onChange={(e) => setCardsPerRow(parseInt(e.target.value))}
+        />
+      </div>
+      <div
+        className={`card-container ${cardsPerRow > 10 ? "compact" : ""}`}
+        style={{
+          display: 'grid',
+          gridTemplateColumns: `repeat(${cardsPerRow}, 1fr)`,
+          gap: '15px'
+        }}
+      >
         {filteredCards.map((card, index) => (
           <div
             key={index}
-            className="card"
+            className={getCardClass(card)}
             onClick={() => setSelectedCard(card)}
           >
             <img
@@ -96,28 +181,35 @@ function App() {
               alt={displayName(card)}
               className="card-image"
             />
-            <p>{displayName(card)}</p>
+            {cardsPerRow <= 10 && <p>{displayName(card)}</p>}
           </div>
         ))}
       </div>
 
       {selectedCard && (
         <div className="card-details">
-          <button className="close-btn" onClick={() => setSelectedCard(null)}>Close</button>
+          <button className="close-btn" onClick={() => setSelectedCard(null)}>
+            Close
+          </button>
           <h2>{selectedCard.name}</h2>
           <img
             src={selectedCard.image_url}
             alt={selectedCard.name}
             className="details-image"
           />
-          <p><strong>{keyLabels.type}:</strong> {selectedCard.type}</p>
-          {/* Display all additional fields except the ones we've normalized */}
+          <p>
+            <strong>{keyLabels.type}:</strong> {selectedCard.type}
+          </p>
           <div className="card-info">
             {Object.entries(selectedCard).map(([key, value]) => {
               if (['image_url', 'name', 'type'].includes(key)) return null;
-              const label = keyLabels[key] || key; // Use custom label if available
+              if (!value || value.trim() === "") return null;
+              const label = keyLabels[key] || key;
               return (
-                <p key={key}><strong>{label}:</strong> {value}</p>
+                <p key={key}>
+                  <strong>{label}:</strong>{' '}
+                  <span dangerouslySetInnerHTML={{ __html: highlightText(value) }} />
+                </p>
               );
             })}
           </div>

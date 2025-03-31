@@ -1,10 +1,22 @@
+@font-face {
+  font-family: 'balatro';
+  src: url('balatro.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'balatro', Arial, sans-serif;
+}
+
+
 .App {
-  font-family: Arial, sans-serif;
   text-align: center;
   padding: 20px;
 }
 
 .search-bar {
+  font-family: 'balatro', Arial, sans-serif;  
   width: 80%;
   max-width: 400px;
   padding: 10px;
@@ -13,46 +25,8 @@
   border-radius: 5px;
 }
 
-.card-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-  justify-content: center;
-}
-
-.card {
-  width: 150px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 10px;
-  transition: transform 0.3s ease;
-  cursor: pointer;
-}
-
-.card:hover {
-  transform: scale(1.05);
-}
-
-.card-image {
-  width: 100%;
-  height: auto;
-  border-radius: 5px;
-}
-
-.card-details {
-  margin-top: 30px;
-  padding: 20px;
-  border: 1px solid #ddd;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: left;
-  background-color: #f9f9f9;
-  border-radius: 8px;
-  position: relative;
-}
-
 .close-btn {
+  font-family: balatro, Arial, sans-serif;
   position: absolute;
   right: 15px;
   top: 15px;
@@ -67,6 +41,99 @@
   margin-bottom: 15px;
 }
 
+.slider-container {
+  margin-bottom: 20px;
+}
+
+.card-container {
+  margin: 0 auto;
+  justify-items: center;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.card-details {
+  position: relative;
+  margin-top: 30px;
+  padding: 20px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
 .card-info p {
   margin: 5px 0;
+}
+
+
+.highlight-plusmult {color: #ff4c40; font-weight: bold;}
+.highlight-xmult {background-color: #ff4c40; color: white; font-weight: bold;}
+.highlight-chips {color: #0093ff; font-weight: bold;}
+.highlight-money {color: #f5b244; font-weight: bold;}
+
+/* Er ikke ferdig enda :(
+.highlight-important {color: #beb800; font-weight: bold;}
+*/
+.highlight-hearts {color: #f03464; font-weight: bold;}
+.highlight-diamonds {color: #f06b3f; font-weight: bold;}
+.highlight-clubs {color: #225854; font-weight: bold;}
+.highlight-spades {  color: #1f1f1f; font-weight: bold;}
+
+
+/* Different text color based on rarity */
+.rarity-commonTxt { color: #0d7fc6; }
+.rarity-uncommonTxt { color: #1bdd0e; }
+.rarity-rareTxt { color: #d82e0c; }
+.rarity-legendaryTxt { color : #7a236f; }
+
+/* For other types */
+.card.tarotTxt { color: #deb52e; }
+.card.planetTxt { color: #00bbff; }
+.card.voucherTxt { color: #8d6d6d; }
+.card.spectralTxt { color: #441b82; }
+
+
+
+/* Different background for card types and rarity */
+/* For Jokers, we use rarity: common, uncommon, rare, legendary */
+.card.rarity-common { background-color: #0d7fc6; }
+.card.rarity-uncommon { background-color: #1bdd0e; }
+.card.rarity-rare { background-color: #d82e0c; }
+.card.rarity-legendary { background-color: #7a236f; }
+
+/* For other types */
+.card.Tarot { background-color: #deb52e; }
+.card.Planet { background-color: #00bbff; }
+.card.Voucher { background-color: #8d6d6d; }
+.card.Spectral { background-color: #441b82; }
+
+
+/* When more than 10 cards per row are chosen, make the container compact */
+.card-container.compact {
+  gap: 1px; /* smaller gaps */
+}
+
+/* You might want to reduce padding/margin for each card as well */
+.card-container.compact .card {
+  padding: 1px;
 }
