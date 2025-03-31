@@ -122,10 +122,10 @@ body {
 .card.rarity-legendary { background-color: #7a236f; }
 
 /* For other types */
-.card.Tarot { background-color: #deb52e; }
-.card.Planet { background-color: #00bbff; }
-.card.Voucher { background-color: #8d6d6d; }
-.card.Spectral { background-color: #441b82; }
+.card.tarot { background-color: #deb52e; }
+.card.planet { background-color: #00bbff; }
+.card.voucher { background-color: #8d6d6d; }
+.card.spectral { background-color: #441b82; }
 
 
 /* When more than 10 cards per row are chosen, make the container compact */

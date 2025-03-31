@@ -1,0 +1,242 @@
+[
+  {
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/d/d5/Small_Blind.png",
+    "name": "Small Blind",
+    "description": "No special effects - can be skipped to receive aTag",
+    "minimum_ante": "1",
+    "score_requirement": "1x base",
+    "earnings": "$3"
+  },
+  {
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/a/a0/Big_Blind.png",
+    "name": "Big Blind",
+    "description": "No special effects - can be skipped to receive aTag",
+    "minimum_ante": "1",
+    "score_requirement": "1.5x base",
+    "earnings": "$4"
+  },
+  {
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/8/89/The_Hook.png",
+    "name": "The Hook",
+    "description": "Discards 2 random cards held in hand after every played hand",
+    "minimum_ante": "1",
+    "score_requirement": "2x base",
+    "earnings": "$5"
+  },
+  {
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/3/33/The_Ox.png",
+    "name": "The Ox",
+    "description": "Playing your most played hand this run sets money to $0",
+    "minimum_ante": "6",
+    "score_requirement": "2x base",
+    "earnings": "$5"
+  },
+  {
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/d/d4/The_House.png",
+    "name": "The House",
+    "description": "First hand is drawn face down",
+    "minimum_ante": "2",
+    "score_requirement": "2x base",
+    "earnings": "$5"
+  },
+  {
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/8/8a/The_Wall.png",
+    "name": "The Wall",
+    "description": "Extra large blind",
+    "minimum_ante": "2",
+    "score_requirement": "4x base",
+    "earnings": "$5"
+  },
+  {
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/f/f5/The_Wheel.png",
+    "name": "The Wheel",
+    "description": "1 in 7 cards get drawn face down during the round",
+    "minimum_ante": "2",
+    "score_requirement": "2x base",
+    "earnings": "$5"
+  },
+  {
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/1/1d/The_Arm.png",
+    "name": "The Arm",
+    "description": "Decrease level of played poker hand by 1 (hand levels can go as low as Level 1, and are reduced before scoring)",
+    "minimum_ante": "2",
+    "score_requirement": "2x base",
+    "earnings": "$5"
+  },
+  {
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/c/cb/The_Club.png",
+    "name": "The Club",
+    "description": "All Club cards are debuffed",
+    "minimum_ante": "1",
+    "score_requirement": "2x base",
+    "earnings": "$5"
+  },
+  {
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/a/a1/The_Fish.png",
+    "name": "The Fish",
+    "description": "Cards drawn face down after each hand played",
+    "minimum_ante": "2",
+    "score_requirement": "2x base",
+    "earnings": "$5"
+  },
+  {
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/6/6f/The_Psychic.png",
+    "name": "The Psychic",
+    "description": "Must play 5 cards (not all cards need to score)",
+    "minimum_ante": "1",
+    "score_requirement": "2x base",
+    "earnings": "$5"
+  },
+  {
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/1/1e/The_Goad.png",
+    "name": "The Goad",
+    "description": "All Spade cards are debuffed",
+    "minimum_ante": "1",
+    "score_requirement": "2x base",
+    "earnings": "$5"
+  },
+  {
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/0/00/The_Water.png",
+    "name": "The Water",
+    "description": "Start with 0 discards",
+    "minimum_ante": "2",
+    "score_requirement": "2x base",
+    "earnings": "$5"
+  },
+  {
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/a/a9/The_Window.png",
+    "name": "The Window",
+    "description": "All Diamond cards are debuffed",
+    "minimum_ante": "1",
+    "score_requirement": "2x base",
+    "earnings": "$5"
+  },
+  {
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/d/dd/The_Manacle.png",
+    "name": "The Manacle",
+    "description": "-1 Hand Size",
+    "minimum_ante": "1",
+    "score_requirement": "2x base",
+    "earnings": "$5"
+  },
+  {
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/f/f9/The_Eye.png",
+    "name": "The Eye",
+    "description": "No repeat hand types this round (every hand played this round must be of a different type and not previously played this round)",
+    "minimum_ante": "3",
+    "score_requirement": "2x base",
+    "earnings": "$5"
+  },
+  {
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/b/b1/The_Mouth.png",
+    "name": "The Mouth",
+    "description": "Only one hand type can be played this round",
+    "minimum_ante": "2",
+    "score_requirement": "2x base",
+    "earnings": "$5"
+  },
+  {
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/c/c6/The_Plant.png",
+    "name": "The Plant",
+    "description": "All face cards are debuffed",
+    "minimum_ante": "4",
+    "score_requirement": "2x base",
+    "earnings": "$5"
+  },
+  {
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/7/7c/The_Serpent.png",
+    "name": "The Serpent",
+    "description": "After Play or Discard, always draw 3 cards (ignores hand size)",
+    "minimum_ante": "5",
+    "score_requirement": "2x base",
+    "earnings": "$5"
+  },
+  {
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/d/de/The_Pillar.png",
+    "name": "The Pillar",
+    "description": "Cards played previously this Ante (during Small and Big Blinds) are debuffed",
+    "minimum_ante": "1",
+    "score_requirement": "2x base",
+    "earnings": "$5"
+  },
+  {
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/8/85/The_Needle.png",
+    "name": "The Needle",
+    "description": "Play only 1 hand",
+    "minimum_ante": "2",
+    "score_requirement": "1x base",
+    "earnings": "$5"
+  },
+  {
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/8/8e/The_Head.png",
+    "name": "The Head",
+    "description": "All Heart cards are debuffed",
+    "minimum_ante": "1",
+    "score_requirement": "2x base",
+    "earnings": "$5"
+  },
+  {
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/f/fb/The_Tooth.png",
+    "name": "The Tooth",
+    "description": "Lose $1 per card played",
+    "minimum_ante": "3",
+    "score_requirement": "2x base",
+    "earnings": "$5"
+  },
+  {
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/2/28/The_Flint.png",
+    "name": "The Flint",
+    "description": "Base Chips and Mult for played poker hands are halved for the entire round",
+    "minimum_ante": "2",
+    "score_requirement": "2x base",
+    "earnings": "$5"
+  },
+  {
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/2/20/The_Mark.png",
+    "name": "The Mark",
+    "description": "All face cards are drawn face down",
+    "minimum_ante": "2",
+    "score_requirement": "2x base",
+    "earnings": "$5"
+  },
+  {
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/4/4a/Amber_Acorn.png",
+    "name": "Amber Acorn",
+    "description": "Flips and shuffles all Joker cards",
+    "minimum_ante": "8",
+    "score_requirement": "2x base",
+    "earnings": "$8"
+  },
+  {
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/9/95/Verdant_Leaf.png",
+    "name": "Verdant Leaf",
+    "description": "All cards debuffed until 1 Joker sold",
+    "minimum_ante": "8",
+    "score_requirement": "2x base",
+    "earnings": "$8"
+  },
+  {
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/1/12/Violet_Vessel.png",
+    "name": "Violet Vessel",
+    "description": "Very large blind",
+    "minimum_ante": "8",
+    "score_requirement": "6x base",
+    "earnings": "$8"
+  },
+  {
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/4/40/Crimson_Heart.png",
+    "name": "Crimson Heart",
+    "description": "One random Joker disabled every hand (changes every hand)",
+    "minimum_ante": "8",
+    "score_requirement": "2x base",
+    "earnings": "$8"
+  },
+  {
+    "image_url": "https://static.wikia.nocookie.net/balatrogame/images/2/26/Cerulean_Bell.png",
+    "name": "Cerulean Bell",
+    "description": "Forces 1 card to always be selected",
+    "minimum_ante": "8",
+    "score_requirement": "2x base",
+    "earnings": "$8"
+  }
+]
