@@ -54,6 +54,30 @@ function App() {
     ...spectral.map(normalizeCard),
   ];
 
+  // Select a random blind
+  const pickRandomCard = () => {
+    const randomIndex = Math.floor(Math.random() * combinedData.length);
+    setSelectedCard(combinedData[randomIndex]); // Correctly select a random card
+  };
+  
+  // Navigate through blinds
+  const goToPrevious = () => {
+    if (selectedCard !== null) {
+      const currentIndex = combinedData.findIndex((card) => card.name === selectedCard.name);
+      const newIndex = (currentIndex - 1 + combinedData.length) % combinedData.length;
+      setSelectedCard(combinedData[newIndex]);
+    }
+  };
+  
+  const goToNext = () => {
+    if (selectedCard !== null) {
+      const currentIndex = combinedData.findIndex((card) => card.name === selectedCard.name);
+      const newIndex = (currentIndex + 1) % combinedData.length;
+      setSelectedCard(combinedData[newIndex]);
+    }
+  };
+  
+  
   // Live filtering
   const filteredCards = combinedData.filter((card) =>
     card.name && card.name.toLowerCase().includes(searchTerm.toLowerCase())
@@ -199,6 +223,18 @@ function App() {
               <button className="close-btn" onClick={() => setSelectedCard(null)}>
                 Close
               </button>
+
+              <button className="prev-btn" onClick={goToPrevious}>
+              ◀ Prev
+            </button>
+
+            <button 
+              onClick={pickRandomCard}>Pick a Random Card
+            </button>
+
+            <button className="next-btn" onClick={goToNext}>
+              Next ▶
+            </button>
 
               <h2>{selectedCard.name}</h2>
               <img

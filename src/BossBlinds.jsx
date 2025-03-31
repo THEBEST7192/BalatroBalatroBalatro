@@ -54,115 +54,122 @@ import bossBlinds from './blind.json';
     return highlightedText;
   };
 
-function BossBlinds() {
-  const [searchTerm, setSearchTerm] = useState('');
-  const [selectedBlind, setSelectedBlind] = useState(null);
-  const [blindsPerRow, setBlindsPerRow] = useState(8);
-
-  // Filter blinds by name
-  const filteredBlinds = bossBlinds.filter((blind) =>
-    blind.name && blind.name.toLowerCase().includes(searchTerm.toLowerCase())
-  );
-
-  // Pick a random blind from the list
-  const pickRandomBlind = () => {
-    const randomBlind = bossBlinds[Math.floor(Math.random() * bossBlinds.length)];
-    setSelectedBlind(randomBlind);
-  };
-
-  return (
-    <div className="BossBlinds">
-      <h1>Boss Blinds</h1>
-      <div className="banner-controls">
-        <button onClick={pickRandomBlind}>Pick a Random Blind</button>
-      </div>
-      <input
-        type="text"
-        placeholder="Search blinds..."
-        value={searchTerm}
-        onChange={(e) => setSearchTerm(e.target.value)}
-        className="search-bar"
-      />
-      <div className="slider-container">
-        <label htmlFor="blindsPerRow">Blinds per row: {blindsPerRow}</label>
-        <input
-          type="range"
-          id="blindsPerRow"
-          min="5"
-          max="10"
-          value={blindsPerRow}
-          onChange={(e) => setBlindsPerRow(parseInt(e.target.value))}
-        />
-      </div>
-      <div
-        className={`blind-container ${blindsPerRow > 10 ? "compact" : ""}`}
-        style={{
-          display: 'grid',
-          gridTemplateColumns: `repeat(${blindsPerRow}, 1fr)`,
-          gap: '15px'
-        }}
-      >
-        {filteredBlinds.map((blind, index) => (
-          <div
-            key={index}
-            className="blind-card"
-            onClick={() => setSelectedBlind(blind)}
-          >
-            <img
-              src={blind.image_url || 'https://via.placeholder.com/150'}
-              alt={blind.name}
-              className="blind-image"
-            />
-            {blindsPerRow <= 10 && <p>{blind.name}</p>}
-          </div>
-        ))}
-      </div>
-      {selectedBlind && (
-        <div className="blind-details">
-
-          <button className="close-btn" onClick={() => setSelectedBlind(null)}>
-            Close
-          </button>
-
-          <h2>{selectedBlind.name}</h2>
-          <img
-            src={selectedBlind.image_url || 'https://via.placeholder.com/150'}
-            alt={selectedBlind.name}
-            className="details-image"
-          />
-          <div className="blind-info">
-            {selectedBlind.description && (
-              <div className="blind-info-item">
-                <strong>Description: </strong>
-                <span dangerouslySetInnerHTML={{ __html: highlightText(selectedBlind.description) }}/>   
-              </div>
-            )}
-            {selectedBlind.minimum_ante && (
-              <div className="blind-info-item">
-                <strong>Minimum Ante: </strong>
-                <span dangerouslySetInnerHTML={{ __html: highlightText(selectedBlind.minimum_ante) }}/>                
-              </div>
-            )}
-            {selectedBlind.score_requirement && (
-              <div className="blind-info-item">
-                <strong>Score Requirement: </strong>
-                <span dangerouslySetInnerHTML={{ __html: highlightText(selectedBlind.score_requirement) }}/>
-
-              </div>
-            )}
-            {selectedBlind.earnings && (
-              <div className="blind-info-item">
-                <strong>Earnings: </strong>
-                <span dangerouslySetInnerHTML={{ __html: highlightText(selectedBlind.earnings) }}/>
-
-              </div>
-            )}
-          </div>
+  function BossBlinds() {
+    const [searchTerm, setSearchTerm] = useState('');
+    const [selectedIndex, setSelectedIndex] = useState(null);
+    const [blindsPerRow, setBlindsPerRow] = useState(8);
+  
+    // Filter blinds by name
+    const filteredBlinds = bossBlinds.filter((blind) =>
+      blind.name && blind.name.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+  
+    // Select a random blind
+    const pickRandomBlind = () => {
+      const randomIndex = Math.floor(Math.random() * bossBlinds.length);
+      setSelectedIndex(randomIndex);
+    };
+  
+    // Navigate through blinds
+    const goToPrevious = () => {
+      if (selectedIndex !== null) {
+        setSelectedIndex((prevIndex) => (prevIndex - 1 + filteredBlinds.length) % filteredBlinds.length);
+      }
+    };
+  
+    const goToNext = () => {
+      if (selectedIndex !== null) {
+        setSelectedIndex((prevIndex) => (prevIndex + 1) % filteredBlinds.length);
+      }
+    };
+  
+    return (
+      <div className="BossBlinds">
+        <h1>Boss Blinds</h1>
+        <div className="banner-controls">
+          <button onClick={pickRandomBlind}>Pick a Random Blind</button>
         </div>
-      )}
-    </div>
-  );
-}
+        <input
+          type="text"
+          placeholder="Search blinds..."
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+          className="search-bar"
+        />
+        <div className="slider-container">
+          <label htmlFor="blindsPerRow">Blinds per row: {blindsPerRow}</label>
+          <input
+            type="range"
+            id="blindsPerRow"
+            min="5"
+            max="10"
+            value={blindsPerRow}
+            onChange={(e) => setBlindsPerRow(parseInt(e.target.value))}
+          />
+        </div>
+        <div
+          className="blind-container"
+          style={{
+            display: 'grid',
+            gridTemplateColumns: `repeat(${blindsPerRow}, 1fr)`,
+            gap: '15px',
+          }}
+        >
+          {filteredBlinds.map((blind, index) => (
+            <div
+              key={index}
+              className="blind-card"
+              onClick={() => setSelectedIndex(index)}
+            >
+              <img
+                src={blind.image_url || 'https://via.placeholder.com/150'}
+                alt={blind.name}
+                className="blind-image"
+              />
+              {blindsPerRow <= 10 && <p>{blind.name}</p>}
+            </div>
+          ))}
+        </div>
+  
+        {selectedIndex !== null && (
+          <div className="blind-details">
+            <button className="close-btn" onClick={() => setSelectedIndex(null)}>
+              Close
+            </button>
+            <button className="prev-btn" onClick={goToPrevious}>
+              ◀ Prev
+            </button>
+
+            <button 
+              onClick={pickRandomBlind}>Pick a Random Blind
+            </button>
+
+            <button className="next-btn" onClick={goToNext}>
+              Next ▶
+            </button>
+  
+            <h2>{filteredBlinds[selectedIndex].name}</h2>
+            <img
+              src={filteredBlinds[selectedIndex].image_url || 'https://via.placeholder.com/150'}
+              alt={filteredBlinds[selectedIndex].name}
+              className="details-image"
+            />
+            <div className="blind-info">
+              {filteredBlinds[selectedIndex].description && (
+                <div className="blind-info-item">
+                  <strong>Description: </strong>
+                  <span
+                    dangerouslySetInnerHTML={{ __html: highlightText(filteredBlinds[selectedIndex].description) }}
+                  />
+                </div>
+              )}
+            </div>
+          </div>
+        )}
+      </div>
+    );
+  }
+  
 
 
 
