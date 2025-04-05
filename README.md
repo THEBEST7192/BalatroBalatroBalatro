@@ -1,10 +1,10 @@
-# BalatroSide
+# Jimbo Helper
 
 A comprehensive companion application for the Balatro card game.
 
 ## Description
 
-BalatroSide is a web-based companion application that provides detailed information about various card types and game mechanics in the Balatro card game. The application includes data for:
+Jimbo Helper is a web-based companion application that provides detailed information about various card types and game mechanics in the Balatro card game. The application includes data for:
 - Jokers
 - Tarot Cards
 - Planet Cards
@@ -32,8 +32,8 @@ BalatroSide is a web-based companion application that provides detailed informat
 
 1. Clone the repository
 ```bash
-git clone [repository-url]
-cd BalatroSide
+git clone https://github.com/THEBEST7192/Jimbo-Helper
+cd Jimbo-Helper
 ```
 
 2. Install dependencies:

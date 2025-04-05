@@ -168,7 +168,7 @@ function App() {
   return (
     <div className="App">
       <header>
-        <h1>Balatro Site</h1>
+        <h1>Jimbo Helper</h1>
         <nav>
           <button onClick={() => setSelectedTab("cards")}>Card Gallery</button>
           <button onClick={() => setSelectedTab("bossblinds")}>Boss Blinds</button>
