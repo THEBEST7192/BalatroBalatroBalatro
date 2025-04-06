@@ -55,14 +55,12 @@ def scrape_jokers():
             "effect": effect,
             "cost": cost,
             "rarity": rarity,
-#            "unlock_requirement": unlock,
             "type": joker_type,
             "activation": activation,
             "image_url": image_url
         })
     return data
 
-# The same change should be applied to the other scraping functions
 def scrape_tarot_cards():
     url = "https://balatrogame.fandom.com/wiki/Tarot_Cards"
     response = requests.get(url, headers=HEADERS)

@@ -58,10 +58,27 @@ The application uses pre-scraped data from the Balatro game wiki. The data is st
 - `spectral.json` - Spectral cards information
 - `blind.json` - Blinds and Antes information
 
-If you need to update the data, run the Python scraper:
+#### Scraper Setup
+
+The scraper is a Python utility that fetches and processes game data from the Balatro game wiki. To use the scraper:
+
+1. Install the required Python packages:
 ```bash
-python Scraper.py
+pip install -r Scraper/requirements.txt
 ```
+
+2. Run the scraper:
+```bash
+python Scraper/Scraper.py
+```
+
+The scraper will automatically:
+- Process and clean the data
+- Save the data to corresponding JSON files
+- Handle image URLs to ensure accessibility
+- Handle errors gracefully with informative messages
+
+If you need to update the data, run the Python scraper.
 
 ## Usage
 
