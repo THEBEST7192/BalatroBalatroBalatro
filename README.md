@@ -112,7 +112,3 @@ The application provides a user-friendly interface to:
 ## License
 
 This project is intended for personal use and learning purposes.
-
-## Last Updated
-
-2025-04-05
